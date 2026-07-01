@@ -55,12 +55,12 @@
   header:not(.scrolled) .menu-toggle{color:#f3ead9}
 
   .hero{min-height:100vh;display:flex;align-items:center;position:relative;
-    background:linear-gradient(180deg,rgba(38,28,21,.42),rgba(38,28,21,.54)),
+    background:linear-gradient(180deg,rgba(28,20,15,.45) 0%,rgba(28,20,15,0) 20%),
       url('images/hall.jpg') center 42%/cover no-repeat;color:#fbf4e8}
-  .hero .wrap{padding-top:5rem}
-  .hero-inner{max-width:660px;padding:2.3rem 2.6rem 2.5rem;border-radius:8px;
-    background:linear-gradient(160deg,rgba(26,19,14,.56),rgba(26,19,14,.36));
-    -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 12px 44px rgba(18,12,8,.28)}
+  .hero-band{width:100%;padding:3.6rem 0;
+    background:linear-gradient(180deg,rgba(22,16,11,0) 0%,rgba(22,16,11,.6) 18%,rgba(22,16,11,.6) 82%,rgba(22,16,11,0) 100%);
+    -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+  .hero .wrap{padding-top:0}
   .hero .eyebrow{color:#f3d9b8;text-shadow:0 1px 10px rgba(18,12,8,.55)}
   .hero h1{color:#fff;font-size:clamp(3rem,8vw,6rem);margin:1rem 0 .4rem;font-weight:500;
     text-shadow:0 2px 26px rgba(16,11,7,.5)}
@@ -169,8 +169,8 @@
 </header>
 
 <section class="hero" id="top">
-  <div class="wrap">
-    <div class="hero-inner reveal">
+  <div class="hero-band">
+    <div class="wrap reveal">
       <p class="eyebrow">Nurse-led medical aesthetics · Hartlebury</p>
       <h1>The Cottage</h1>
       <p class="tag">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
