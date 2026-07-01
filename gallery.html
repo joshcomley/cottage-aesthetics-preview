@@ -11,11 +11,10 @@
 <link rel="stylesheet" href="site.css">
 <style>
   .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:.5rem}
-  .ba-tile{aspect-ratio:1/1;border-radius:8px;background:linear-gradient(135deg,var(--cream-2),var(--oat));
-    border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;color:var(--coffee-soft);padding:1rem}
-  .ba-tile .ph{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;color:var(--mocha)}
-  .ba-tile .tag{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);margin-top:.4rem}
+  .ba-tile{position:relative;margin:0;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+  .ba-tile img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+  .ba-tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .7rem;color:#fbf4e8;
+    background:linear-gradient(0deg,rgba(28,20,14,.78),transparent);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
   @media(max-width:820px){.ba-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
@@ -30,23 +29,20 @@
 <section class="treat">
   <div class="wrap">
     <div class="ba-note reveal" style="margin-bottom:2.4rem">
-      This gallery is ready and waiting. As soon as Purdi has signed photo-consent from clients,
-      genuine before &amp; after images will appear here — filterable by treatment below.
+      Genuine, consented before &amp; after results. More treatment galleries (microneedling,
+      skin boosters, polynucleotides) will be added as further consented photos come in.
     </div>
     <div class="gfilter reveal" id="gfilter">
       <button class="active" data-cat="all">All</button>
-      <button data-cat="microneedling">Microneedling</button>
-      <button data-cat="boosters">Skin Boosters</button>
-      <button data-cat="poly">Polynucleotides</button>
-      <button data-cat="fillers">Dermal Fillers</button>
+      <button data-cat="lips">Lips</button>
+      <button data-cat="chin">Chin &amp; Jaw</button>
+      <button data-cat="cheeks">Cheeks</button>
     </div>
     <div class="ba-grid" id="bagrid">
-      <div class="ba-tile" data-cat="microneedling"><span class="ph">Before &amp; After</span><span class="tag">Microneedling</span></div>
-      <div class="ba-tile" data-cat="boosters"><span class="ph">Before &amp; After</span><span class="tag">Skin Boosters</span></div>
-      <div class="ba-tile" data-cat="fillers"><span class="ph">Before &amp; After</span><span class="tag">Lip Enhancement</span></div>
-      <div class="ba-tile" data-cat="poly"><span class="ph">Before &amp; After</span><span class="tag">Polynucleotides</span></div>
-      <div class="ba-tile" data-cat="fillers"><span class="ph">Before &amp; After</span><span class="tag">Cheek Enhancement</span></div>
-      <div class="ba-tile" data-cat="boosters"><span class="ph">Before &amp; After</span><span class="tag">Profhilo</span></div>
+      <figure class="ba-tile" data-cat="lips"><img src="images/ba-lips-1.jpg" alt="Lip filler before and after"><figcaption>Lip Enhancement</figcaption></figure>
+      <figure class="ba-tile" data-cat="lips"><img src="images/ba-lips-2.jpg" alt="Lip filler before and after"><figcaption>Lip Enhancement</figcaption></figure>
+      <figure class="ba-tile" data-cat="chin"><img src="images/ba-chin.jpg" alt="Chin and jaw filler before and after"><figcaption>Chin &amp; Jaw Filler</figcaption></figure>
+      <figure class="ba-tile" data-cat="cheeks"><img src="images/ba-cheeks.jpg" alt="Cheek enhancement before and after"><figcaption>Cheek Enhancement</figcaption></figure>
     </div>
   </div>
 </section>
