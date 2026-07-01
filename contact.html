@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Cottage Aesthetics</title>
+<meta name="description" content="Contact Cottage Aesthetics in Hartlebury — book a free consultation, opening hours, location and parking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+  .contact-sec{background:var(--cream)}
+  .socials a{display:inline-block;margin-right:1rem;color:var(--olive-deep);border-bottom:1px solid var(--brass);padding-bottom:2px}
+  .thanks{background:var(--olive);color:#fff;padding:1rem 1.2rem;border-radius:6px;margin-top:1rem;display:none}
+  .map-sec{padding:0 0 0}
+  .hours li span:last-child{color:var(--coffee)}
+</style>
+</head>
+<body data-page="contact">
+
+<section class="page-hero">
+  <p class="eyebrow">Contact</p>
+  <h1>Come and see us</h1>
+  <p>Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you.</p>
+</section>
+
+<section class="contact-sec">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.4rem">Send a message</h2>
+      <p style="color:var(--coffee-soft);margin-bottom:1rem">I'll get back to you personally, usually within a day.</p>
+      <form class="cform" id="cform" novalidate>
+        <label for="nm">Your name</label>
+        <input id="nm" name="name" type="text" autocomplete="name" required>
+        <label for="em">Email</label>
+        <input id="em" name="email" type="email" autocomplete="email" required>
+        <label for="ph">Phone (optional)</label>
+        <input id="ph" name="phone" type="tel" autocomplete="tel">
+        <label for="msg">How can I help?</label>
+        <textarea id="msg" name="message" placeholder="Tell me a little about what you're interested in…"></textarea>
+        <label class="consent"><input type="checkbox" id="gdpr" required> <span>I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.</span></label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div class="thanks" id="thanks">Thank you — your message has been noted. (Demo preview: live email delivery is wired up when the site goes live.)</div>
+      </form>
+    </div>
+    <div class="reveal">
+      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.6rem">The Cottage</h2>
+      <p class="info-line">8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA</p>
+      <p class="info-line"><a href="tel:07401562462" style="border-bottom:1px solid var(--brass)">07401 562 462</a></p>
+      <p class="info-line"><a href="mailto:cottageaestheticshartlebury@gmail.com" style="border-bottom:1px solid var(--brass)">cottageaestheticshartlebury@gmail.com</a></p>
+      <p class="info-line" style="margin-top:.8rem"><strong>Easy, free parking</strong> right outside the clinic.</p>
+      <ul class="hours" style="margin-top:1.2rem">
+        <li><span>Monday</span><span>10:00 – 19:00</span></li>
+        <li><span>Tuesday</span><span>10:00 – 19:00</span></li>
+        <li><span>Wednesday</span><span class="closed">By phone enquiry</span></li>
+        <li><span>Thursday</span><span>10:00 – 19:00</span></li>
+        <li><span>Friday</span><span>10:00 – 17:00</span></li>
+        <li><span>Saturday</span><span>11:00 – 16:00</span></li>
+        <li><span>Sunday</span><span class="closed">Closed</span></li>
+      </ul>
+      <p class="socials" style="margin-top:1.4rem"><a href="#">Instagram</a><a href="#">Facebook</a></p>
+      <p style="margin-top:1.4rem"><a class="btn btn-primary js-book" href="#">Book Online</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="map-sec">
+  <iframe class="map-embed" style="min-height:420px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps?q=8+Walton+Cottage,+Walton+Road,+Hartlebury,+Kidderminster+DY10+4JA&output=embed"></iframe>
+</section>
+
+<script src="site.js"></script>
+<script>
+  document.getElementById('cform').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!document.getElementById('nm').value || !document.getElementById('em').value || !document.getElementById('gdpr').checked){
+      alert('Please add your name, email and tick consent so I can reply.'); return;
+    }
+    document.getElementById('thanks').style.display='block';
+    this.querySelector('button[type=submit]').disabled=true;
+  });
+</script>
+</body>
+</html>

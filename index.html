@@ -10,28 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
 </head>
-<body>
-
-<header id="hd">
-  <div class="wrap nav">
-    <a href="#top" class="brand"><span class="b1">Cottage</span><span class="b2">Aesthetics</span></a>
-    <nav class="nav-links">
-      <a class="lnk" href="#about">About</a>
-      <a class="lnk" href="#treatments">Treatments</a>
-      <a class="lnk" href="#cottage">The Cottage</a>
-      <a class="lnk" href="reviews.html">Reviews</a>
-      <a class="lnk" href="#contact">Contact</a>
-      <a class="btn btn-primary js-book" href="#">Book Now</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-  </div>
-</header>
+<body data-page="home">
 
 <section class="hero" id="top">
   <div class="hero-band">
     <div class="wrap reveal">
       <p class="eyebrow">Nurse-led medical aesthetics · Hartlebury</p>
-      <h1>The Cottage</h1>
+      <h1>Cottage Aesthetics</h1>
       <p class="tag">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
       <div class="hero-cta">
         <a href="treatments.html" class="btn btn-primary">View Treatments</a>
@@ -201,18 +186,6 @@
   </div>
 </section>
 
-<footer>
-  <div class="script">Cottage Aesthetics</div>
-  <p style="margin-top:.5rem">Nurse-led medical aesthetics · Hartlebury, Worcestershire</p>
-  <p style="margin-top:.6rem;opacity:.6;font-size:.72rem">Design preview · earthy concept</p>
-</footer>
-
-<script>
-  const hd=document.getElementById('hd');
-  addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>60));
-  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-  <script src="booking.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>

@@ -42,24 +42,13 @@
   @media(max-width:820px){.grid{grid-template-columns:1fr}.nav a.lnk{display:none}}
 </style>
 </head>
-<body>
-<header>
-  <div class="wrap nav">
-    <a href="index.html" class="brand"><span class="b1">Cottage</span><span class="b2">Aesthetics</span></a>
-    <nav><a class="lnk" href="index.html">Home</a><a class="lnk" href="index.html#treatments">Treatments</a><a class="lnk" href="index.html#contact">Contact</a></nav>
-  </div>
-</header>
+<body data-page="reviews">
 <section class="hero">
   <p class="eyebrow">Kind words from The Cottage</p>
   <h1>Client Reviews</h1>
   <div class="stars" style="font-size:1.3rem">★★★★★ &nbsp;5.0 on Google</div>
 </section>
 <div class="grid" id="grid"></div>
-<footer>
-  <div class="script">Cottage Aesthetics</div>
-  <p style="margin-top:.5rem">Nurse-led medical aesthetics · Hartlebury, Worcestershire</p>
-  <p style="margin-top:1rem"><a class="btn" href="index.html#contact">Book a free consultation</a></p>
-</footer>
 <script>
 const R=[
  {n:"Bev D.",t:"I visited Cottage Aesthetics for Jalupro Super Hydro Skin Boosters with Purdi and once again had a fantastic experience. Her clinic was as welcoming, beautiful and spotless as ever."},
@@ -76,5 +65,6 @@ const g=document.getElementById('grid');
 for(const r of R){g.insertAdjacentHTML('beforeend',
  `<article class="card"><div class="stars">★★★★★</div><p class="q">${r.t}”</p><div class="nm">${r.n}<br><span class="src">Google review</span></div></article>`);}
 </script>
+<script src="site.js"></script>
 </body>
 </html>
