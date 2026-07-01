@@ -27,7 +27,7 @@
         '<div><div class="script">Cottage Aesthetics</div><p>Nurse-led medical aesthetics<br>Hartlebury, Worcestershire</p></div>' +
         '<div><h4>Explore</h4><a href="about.html">About</a><a href="treatments.html">Treatments</a><a href="gallery.html">Before &amp; After</a><a href="reviews.html">Reviews</a></div>' +
         '<div><h4>Visit</h4><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="aftercare.html">Aftercare</a><a href="policies.html">Clinic Policies</a></div>' +
-        '<div><h4>Get in touch</h4><a href="tel:07401562462">07401 562 462</a><a href="mailto:cottageaestheticshartlebury@gmail.com">Email us</a><a href="#" class="js-book">Book online</a></div>' +
+        '<div><h4>Get in touch</h4><a href="tel:07401562462">07401 562 462</a><a href="mailto:cottageaestheticshartlebury@gmail.com">Email us</a><a href="https://www.instagram.com/cottageaesthetics" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61572079150383" target="_blank" rel="noopener">Facebook</a><a href="#" class="js-book">Book online</a></div>' +
       '</div>' +
       '<div class="foot-base">&copy; Cottage Aesthetics &middot; Hartlebury, Worcestershire &middot; Registered nurse-led clinic</div>' +
     '</footer>';
