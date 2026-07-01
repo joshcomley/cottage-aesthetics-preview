@@ -55,13 +55,17 @@
   header:not(.scrolled) .menu-toggle{color:#f3ead9}
 
   .hero{min-height:100vh;display:flex;align-items:center;position:relative;
-    background:linear-gradient(100deg,rgba(44,34,28,.78) 0%,rgba(44,34,28,.55) 46%,rgba(58,44,34,.42) 100%),
+    background:linear-gradient(180deg,rgba(38,28,21,.42),rgba(38,28,21,.54)),
       url('images/hall.jpg') center 42%/cover no-repeat;color:#fbf4e8}
   .hero .wrap{padding-top:5rem}
-  .hero .eyebrow{color:#f1d6b4}
-  .hero h1{color:#fff;font-size:clamp(3rem,8vw,6rem);margin:1rem 0 .4rem;font-weight:500}
+  .hero-inner{max-width:660px;padding:2.3rem 2.6rem 2.5rem;border-radius:8px;
+    background:linear-gradient(160deg,rgba(26,19,14,.56),rgba(26,19,14,.36));
+    -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 12px 44px rgba(18,12,8,.28)}
+  .hero .eyebrow{color:#f3d9b8;text-shadow:0 1px 10px rgba(18,12,8,.55)}
+  .hero h1{color:#fff;font-size:clamp(3rem,8vw,6rem);margin:1rem 0 .4rem;font-weight:500;
+    text-shadow:0 2px 26px rgba(16,11,7,.5)}
   .hero .tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,3vw,1.9rem);
-    color:#f0e2cf;max-width:34ch;margin-bottom:2.2rem}
+    color:#f3e7d6;max-width:34ch;margin-bottom:2.2rem;text-shadow:0 1px 14px rgba(16,11,7,.5)}
   .hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
   .scrollcue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-size:.7rem;
     letter-spacing:.3em;text-transform:uppercase;color:#e7dcc6;opacity:.8}
@@ -166,12 +170,14 @@
 
 <section class="hero" id="top">
   <div class="wrap">
-    <p class="eyebrow reveal">Nurse-led medical aesthetics · Hartlebury</p>
-    <h1 class="reveal">The Cottage</h1>
-    <p class="tag reveal">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
-    <div class="hero-cta reveal">
-      <a href="#treatments" class="btn btn-primary">View Treatments</a>
-      <a href="#contact" class="btn btn-ghost">Book a Free Consultation</a>
+    <div class="hero-inner reveal">
+      <p class="eyebrow">Nurse-led medical aesthetics · Hartlebury</p>
+      <h1>The Cottage</h1>
+      <p class="tag">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
+      <div class="hero-cta">
+        <a href="#treatments" class="btn btn-primary">View Treatments</a>
+        <a href="#contact" class="btn btn-ghost">Book a Free Consultation</a>
+      </div>
     </div>
   </div>
   <div class="scrollcue">scroll</div>
