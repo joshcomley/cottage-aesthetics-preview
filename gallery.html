@@ -151,10 +151,10 @@
   // ---- data ----
   var SLIDERS=[
     {cat:'lips',   title:'Lip Enhancement', sub:'Dermal filler', before:'images/ba-lips-1-before.jpg', after:'images/ba-lips-1-after.jpg'},
+    {cat:'lips',   title:'Lip Definition', sub:'Dermal filler', before:'images/ba-lips-2-before.jpg', after:'images/ba-lips-2-after.jpg'},
     {cat:'cheeks', title:'Cheek &amp; Lip Definition', sub:'Dermal filler', before:'images/ba-cheeks-before.jpg', after:'images/ba-cheeks-after.jpg'}
   ];
   var TILES=[
-    {cat:'lips', title:'Lip Enhancement', img:'images/ba-lips-2.jpg', alt:'Lip filler before and after'},
     {cat:'chin', title:'Chin &amp; Jaw Filler', img:'images/ba-chin.jpg', alt:'Chin and jaw filler before and after, multiple angles'}
   ];
 
@@ -189,6 +189,29 @@
     range.addEventListener('input',function(){ set(+range.value); });
     range.addEventListener('pointerdown',function(){ frame.classList.add('touched'); });
     set(50);
+
+    // auto-nudge once when the slider scrolls into view — signals it's draggable
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function nudge(){
+      var start=null, dur=1400;
+      function step(ts){
+        if(start===null) start=ts;
+        var t=(ts-start)/dur;
+        if(t>=1){ set(50); range.value=50; return; }
+        var v=50-30*Math.sin(t*Math.PI); // one smooth sweep left then back
+        set(v); range.value=v;
+        requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    if(!reduce && 'IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ io.disconnect(); setTimeout(nudge,350); }
+        });
+      },{threshold:0.55});
+      io.observe(frame);
+    }
   });
 
   // ---- build tiles ----
