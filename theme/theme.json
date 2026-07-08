@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "cream": "#F1E8D9",
+    "cream-2": "#EADFCB",
+    "oat": "#E4D6BE",
+    "mocha": "#5E4635",
+    "coffee": "#3E312A",
+    "coffee-soft": "#6B584C",
+    "clay": "#B26E4A",
+    "clay-deep": "#9A5C3B",
+    "olive": "#6E7357",
+    "olive-deep": "#565b43",
+    "brass": "#A98A54",
+    "line": "#d9c9ad"
+  },
+  "shadow": "0 18px 44px rgba(62,49,42,.14)",
+  "fonts": {
+    "serif": { "family": "Cormorant Garamond", "weights": ["400", "500", "600"], "italics": true },
+    "sans": { "family": "Jost", "weights": ["300", "400", "500"], "italics": false },
+    "script": { "family": "Pinyon Script", "weights": ["400"], "italics": false }
+  }
+}
