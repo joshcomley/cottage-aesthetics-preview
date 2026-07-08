@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Treatments — Cottage Aesthetics",
+    "description": "Nurse-led aesthetic treatments in Hartlebury: microneedling, skin boosters, polynucleotides, dermal fillers and prescription treatments.",
+    "ogImage": { "src": "images/room.jpg", "alt": "Treatment room" },
+    "navLabel": "Treatments",
+    "inNav": true,
+    "navOrder": 20
+  }
+}

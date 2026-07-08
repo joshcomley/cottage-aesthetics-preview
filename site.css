@@ -149,6 +149,11 @@
 
 /* --- shared header/footer/menu (site.js) --- */
 .nav-links a.lnk.active{color:var(--clay)}
+/* @nav's item template lives inside a display:contents wrapper (partials/header.html)
+   so its rendered items become genuine flex children of .nav-links/.mobile-menu
+   (gap applies between them normally) while staying before the Book Now button in
+   both DOM and visual order — matching the original hand-authored markup exactly */
+.nav-list{display:contents}
 .mobile-menu{display:none}
 @media(max-width:860px){
   .mobile-menu{display:flex;flex-direction:column;background:var(--cream);max-height:0;overflow:hidden;transition:max-height .32s ease}
