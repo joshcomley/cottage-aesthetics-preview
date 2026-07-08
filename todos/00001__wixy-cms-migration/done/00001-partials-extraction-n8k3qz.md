@@ -30,4 +30,4 @@ three upstream wixy fixes this step surfaced — decisions/00005/00006/00008 in
 the wixy repo).
 
 ## Links
-PR: (fill in when opened)
+PR: cottage-aesthetics-preview#2 — merged

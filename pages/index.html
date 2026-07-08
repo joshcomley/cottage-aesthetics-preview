@@ -13,12 +13,12 @@
 <body data-page="home" data-wx-attr="data-booking-url:@bookingUrl">
 
 <!-- wx:partial header -->
-<section class="hero" id="top">
+<section class="hero" id="top" data-wx-bg="hero.bg">
   <div class="hero-band">
     <div class="wrap reveal">
-      <p class="eyebrow">Nurse-led medical aesthetics · Hartlebury</p>
-      <h1>Cottage Aesthetics</h1>
-      <p class="tag">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
+      <p class="eyebrow" data-wx="hero.eyebrow">Nurse-led medical aesthetics · Hartlebury</p>
+      <h1 data-wx="hero.title">Cottage Aesthetics</h1>
+      <p class="tag" data-wx="hero.tag">Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.</p>
       <div class="hero-cta">
         <a href="treatments.html" class="btn btn-primary">View Treatments</a>
         <a href="#" class="btn btn-ghost js-book">Book a Free Consultation</a>
@@ -31,8 +31,8 @@
 <section class="welcome">
   <div class="wrap reveal">
     <div class="sprig">❦</div>
-    <h2>More like walking into a beautiful cottage than a busy clinic</h2>
-    <p>Cottage Aesthetics is a nurse-led medical aesthetics clinic in the peaceful village of Hartlebury.
+    <h2 data-wx="welcome.title">More like walking into a beautiful cottage than a busy clinic</h2>
+    <p data-wx="welcome.body">Cottage Aesthetics is a nurse-led medical aesthetics clinic in the peaceful village of Hartlebury.
     Created to feel different — warm, unhurried and genuinely personal — it pairs exceptional clinical
     standards with a calm, welcoming space our regulars simply call <em>“The Cottage.”</em></p>
   </div>
@@ -40,18 +40,18 @@
 
 <section class="about" id="about">
   <div class="wrap grid">
-    <div class="reveal"><img src="images/purdi.jpg" alt="Purdi, founder of Cottage Aesthetics"></div>
+    <div class="reveal"><img data-wx-img="about.img" src="images/purdi.jpg" alt="Purdi, founder of Cottage Aesthetics"></div>
     <div class="reveal">
-      <p class="eyebrow">Meet your practitioner</p>
-      <h2>Hello, I'm Purdi</h2>
-      <p>I'm a registered nurse with over 15 years of NHS and private healthcare experience, and the
+      <p class="eyebrow" data-wx="about.eyebrow">Meet your practitioner</p>
+      <h2 data-wx="about.title">Hello, I'm Purdi</h2>
+      <p data-wx="about.body1">I'm a registered nurse with over 15 years of NHS and private healthcare experience, and the
       founder of Cottage Aesthetics. My background in plastic surgery, dermatology and reconstructive
       services taught me that every face is unique — and that the best results come from understanding
       the individual in front of me.</p>
-      <p>I believe great care is about more than the treatment itself: trust, honesty and safety are at
+      <p data-wx="about.body2">I believe great care is about more than the treatment itself: trust, honesty and safety are at
       the heart of every appointment. My goal is simply to help you look and feel like the best version
       of yourself — never changing who you are, just enhancing what makes you <em>you</em>.</p>
-      <div class="sig">Purdi</div>
+      <div class="sig" data-wx="about.sig">Purdi</div>
     </div>
   </div>
 </section>
@@ -59,14 +59,14 @@
 <section class="values">
   <div class="wrap">
     <div class="head reveal">
-      <p class="eyebrow">The Cottage philosophy</p>
-      <h2>Care that never feels rushed</h2>
+      <p class="eyebrow" data-wx="values.eyebrow">The Cottage philosophy</p>
+      <h2 data-wx="values.title">Care that never feels rushed</h2>
     </div>
     <div class="vgrid">
-      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg></div><h3>Longer Appointments</h3><p>Time to talk, assess and treat properly — never a conveyor belt.</p></div>
-      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-4 4z"/></svg></div><h3>Honest Consultations</h3><p>Clear, evidence-based advice. Only what's right for you.</p></div>
-      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 19C5 11 11 5 20 5c0 9-6 15-15 14z"/><path d="M5 19 13 11"/></svg></div><h3>Natural Results</h3><p>Subtle, balanced enhancements that still look like you.</p></div>
-      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.8-3.3 7.6-7 8.5-3.7-.9-7-3.7-7-8.5V6z"/><path d="M9 12l2 2 4-4.2"/></svg></div><h3>Medical Safety</h3><p>Nurse-led care, premium products, ongoing professional training.</p></div>
+      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg></div><h3 data-wx="values.card1.title">Longer Appointments</h3><p data-wx="values.card1.body">Time to talk, assess and treat properly — never a conveyor belt.</p></div>
+      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-4 4z"/></svg></div><h3 data-wx="values.card2.title">Honest Consultations</h3><p data-wx="values.card2.body">Clear, evidence-based advice. Only what's right for you.</p></div>
+      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 19C5 11 11 5 20 5c0 9-6 15-15 14z"/><path d="M5 19 13 11"/></svg></div><h3 data-wx="values.card3.title">Natural Results</h3><p data-wx="values.card3.body">Subtle, balanced enhancements that still look like you.</p></div>
+      <div class="vcard reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.8-3.3 7.6-7 8.5-3.7-.9-7-3.7-7-8.5V6z"/><path d="M9 12l2 2 4-4.2"/></svg></div><h3 data-wx="values.card4.title">Medical Safety</h3><p data-wx="values.card4.body">Nurse-led care, premium products, ongoing professional training.</p></div>
     </div>
   </div>
 </section>
@@ -74,53 +74,25 @@
 <section class="quoteband alt">
   <div class="wrap reveal">
     <div class="stars" style="font-size:1.1rem">★★★★★</div>
-    <p class="bigq">“The loveliest experience — she made me feel completely relaxed and at ease.”</p>
-    <p class="attr">Ella S. · Google review</p>
+    <p class="bigq" data-wx="quote1.text">“The loveliest experience — she made me feel completely relaxed and at ease.”</p>
+    <p class="attr" data-wx="quote1.attr">Ella S. · Google review</p>
   </div>
 </section>
 
 <section class="treat" id="treatments">
   <div class="wrap">
     <div class="head reveal">
-      <p class="eyebrow">Treatments</p>
-      <h2>Thoughtfully chosen, expertly delivered</h2>
+      <p class="eyebrow" data-wx="treatTeaser.eyebrow">Treatments</p>
+      <h2 data-wx="treatTeaser.title">Thoughtfully chosen, expertly delivered</h2>
     </div>
-    <div class="tgrid">
-      <div class="tcard reveal">
-        <div class="meta">Every journey starts here</div>
-        <h3>Free Consultation</h3><div class="price">Complimentary · 30 min</div>
-        <p>A relaxed, no-pressure chat so you feel completely confident in your treatment and your practitioner.</p>
-        <a class="btn btn-primary js-book" href="#">Book Now</a>
-      </div>
-      <div class="tcard reveal">
-        <div class="meta">Skin health</div>
-        <h3>Microneedling</h3><div class="price">From £30</div>
-        <p>Stimulates natural collagen to improve texture, soften fine lines and brighten the skin. Standard &amp; advanced options.</p>
-        <a class="btn btn-primary js-book" href="#">Book Now</a>
-      </div>
-      <div class="tcard reveal">
-        <div class="meta">Hydration &amp; glow</div>
-        <h3>Skin Boosters</h3><div class="price">From £150</div>
-        <p>Profhilo &amp; Jalupro — deep hydration, firmness and a subtle “5-point facelift” glow from within.</p>
-        <a class="btn btn-primary js-book" href="#">Book Now</a>
-      </div>
-      <div class="tcard reveal">
-        <div class="meta">Repair &amp; rejuvenate</div>
-        <h3>Polynucleotides</h3><div class="price">From £150</div>
-        <p>Encourages the skin's natural repair — for face, under-eyes, neck, hands and décolletage.</p>
-        <a class="btn btn-primary js-book" href="#">Book Now</a>
-      </div>
-      <div class="tcard reveal">
-        <div class="meta">Balance &amp; definition</div>
-        <h3>Dermal Fillers</h3><div class="price">From £140</div>
-        <p>Lips, cheeks, chin and jawline — restoring volume and harmony while keeping everything natural.</p>
-        <a class="btn btn-primary js-book" href="#">Book Now</a>
-      </div>
-      <div class="tcard reveal">
-        <div class="meta">Prescription · by consultation</div>
-        <h3>Wrinkle Relaxing</h3><div class="price">Enquire</div>
-        <p>Anti-wrinkle &amp; prescription treatments require a face-to-face prescriber consultation for suitability.</p>
-        <a class="btn btn-olive" href="#contact">Enquire</a>
+    <div class="tgrid" data-wx-list="treatments.cards">
+      <div class="tcard reveal" data-wx-list-item>
+        <div class="meta" data-wx=".meta">Every journey starts here</div>
+        <h3 data-wx=".title">Free Consultation</h3><div class="price" data-wx=".price">Complimentary · 30 min</div>
+        <p class="course" data-wx-if=".course" data-wx=".course"></p>
+        <p data-wx=".body">A relaxed, no-pressure chat so you feel completely confident in your treatment and your practitioner.</p>
+        <a class="btn btn-primary js-book" href="#" data-wx-if=".book">Book Now</a>
+        <a class="btn btn-olive" href="#contact" data-wx-if="!.book">Enquire</a>
       </div>
     </div>
     <div class="allbtn reveal"><a class="btn btn-olive" href="treatments.html">View the full treatment menu</a></div>
@@ -130,20 +102,20 @@
 <section class="cottage" id="cottage">
   <div class="wrap grid">
     <div class="gal reveal">
-      <img src="images/room.jpg" alt="Treatment room">
-      <img src="images/hall.jpg" alt="Hallway with olive tree">
-      <img src="images/exterior.jpg" alt="The cottage exterior">
+      <img data-wx-img="cottage.img1" src="images/room.jpg" alt="Treatment room">
+      <img data-wx-img="cottage.img2" src="images/hall.jpg" alt="Hallway with olive tree">
+      <img data-wx-img="cottage.img3" src="images/exterior.jpg" alt="The cottage exterior">
     </div>
     <div class="reveal">
-      <p class="eyebrow">The Cottage</p>
-      <h2>A private retreat, tucked away from the high street</h2>
-      <p>Limewashed walls, olive trees, oak and antique brass — every detail is designed so you relax the
+      <p class="eyebrow" data-wx="cottage.eyebrow">The Cottage</p>
+      <h2 data-wx="cottage.title">A private retreat, tucked away from the high street</h2>
+      <p data-wx="cottage.body">Limewashed walls, olive trees, oak and antique brass — every detail is designed so you relax the
       moment you arrive. A calm, Mediterranean-inspired space in the Worcestershire countryside.</p>
       <ul>
-        <li>Complete privacy &amp; a peaceful setting</li>
-        <li>Easy, free parking right outside</li>
-        <li>Longer appointments — never rushed</li>
-        <li>A warm, welcoming atmosphere</li>
+        <li data-wx="cottage.feature1">Complete privacy &amp; a peaceful setting</li>
+        <li data-wx="cottage.feature2">Easy, free parking right outside</li>
+        <li data-wx="cottage.feature3">Longer appointments — never rushed</li>
+        <li data-wx="cottage.feature4">A warm, welcoming atmosphere</li>
       </ul>
     </div>
   </div>
@@ -152,8 +124,8 @@
 <section class="quoteband" id="reviews">
   <div class="wrap reveal">
     <div class="stars" style="font-size:1.2rem">★★★★★</div>
-    <p class="bigq">“I felt truly listened to for the first time in my Botox journey — incredibly warm, welcoming and knowledgeable.”</p>
-    <p class="attr">Jennifer S. · 5.0 on Google</p>
+    <p class="bigq" data-wx="quote2.text">“I felt truly listened to for the first time in my Botox journey — incredibly warm, welcoming and knowledgeable.”</p>
+    <p class="attr" data-wx="quote2.attr">Jennifer S. · 5.0 on Google</p>
     <a class="btn btn-olive" href="reviews.html">Read more reviews</a>
   </div>
 </section>
@@ -161,25 +133,19 @@
 <section class="contact" id="contact">
   <div class="wrap grid">
     <div class="reveal">
-      <p class="eyebrow">Visit The Cottage</p>
-      <h2>Come and see us</h2>
-      <p style="margin:1rem 0;color:#e0cfb5">8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA</p>
-      <p><a href="tel:07401562462">07401 562 462</a><br>
-      <a href="mailto:cottageaestheticshartlebury@gmail.com">cottageaestheticshartlebury@gmail.com</a></p>
-      <ul class="hours">
-        <li><span>Monday</span><span>10:00 – 19:00</span></li>
-        <li><span>Tuesday</span><span>10:00 – 19:00</span></li>
-        <li><span>Wednesday</span><span class="closed">By phone enquiry</span></li>
-        <li><span>Thursday</span><span>10:00 – 19:00</span></li>
-        <li><span>Friday</span><span>10:00 – 17:00</span></li>
-        <li><span>Saturday</span><span>11:00 – 16:00</span></li>
-        <li><span>Sunday</span><span class="closed">Closed</span></li>
+      <p class="eyebrow" data-wx="contactTeaser.eyebrow">Visit The Cottage</p>
+      <h2 data-wx="contactTeaser.title">Come and see us</h2>
+      <p style="margin:1rem 0;color:#e0cfb5" data-wx="@address">8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA</p>
+      <p><a href="tel:07401562462" data-wx-href="@phoneHref" data-wx="@phone">07401 562 462</a><br>
+      <a href="mailto:cottageaestheticshartlebury@gmail.com" data-wx-href="@emailHref" data-wx="@email">cottageaestheticshartlebury@gmail.com</a></p>
+      <ul class="hours" data-wx-list="@hours">
+        <li data-wx-list-item><span data-wx=".day">Day</span><span class="closed" data-wx-if=".closed" data-wx=".value">Value</span><span data-wx-if="!.closed" data-wx=".value">Value</span></li>
       </ul>
     </div>
     <div class="reveal">
       <div class="cta-box">
-        <h3>Book your free consultation</h3>
-        <p style="color:#e0cfb5;margin-bottom:1.5rem">Every journey begins with a relaxed, no-obligation chat. Booking takes less than a minute.</p>
+        <h3 data-wx="ctaBox.title">Book your free consultation</h3>
+        <p style="color:#e0cfb5;margin-bottom:1.5rem" data-wx="ctaBox.body">Every journey begins with a relaxed, no-obligation chat. Booking takes less than a minute.</p>
         <a class="btn btn-primary js-book" href="#" style="margin-bottom:.8rem">Book Online</a><br>
         <a class="btn btn-ghost" href="tel:07401562462">Call Purdi</a>
       </div>

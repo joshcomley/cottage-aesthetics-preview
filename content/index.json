@@ -6,5 +6,73 @@
     "navLabel": "Home",
     "inNav": false,
     "navOrder": 0
+  },
+  "hero": {
+    "eyebrow": "Nurse-led medical aesthetics · Hartlebury",
+    "title": "Cottage Aesthetics",
+    "tag": "Natural, considered aesthetics — in a calm countryside retreat where you're never rushed.",
+    "bg": { "src": "images/lounge.jpg", "alt": "" }
+  },
+  "welcome": {
+    "title": "More like walking into a beautiful cottage than a busy clinic",
+    "body": "Cottage Aesthetics is a nurse-led medical aesthetics clinic in the peaceful village of Hartlebury. Created to feel different — warm, unhurried and genuinely personal — it pairs exceptional clinical standards with a calm, welcoming space our regulars simply call <em>“The Cottage.”</em>"
+  },
+  "about": {
+    "img": { "src": "images/purdi.jpg", "alt": "Purdi, founder of Cottage Aesthetics" },
+    "eyebrow": "Meet your practitioner",
+    "title": "Hello, I'm Purdi",
+    "body1": "I'm a registered nurse with over 15 years of NHS and private healthcare experience, and the founder of Cottage Aesthetics. My background in plastic surgery, dermatology and reconstructive services taught me that every face is unique — and that the best results come from understanding the individual in front of me.",
+    "body2": "I believe great care is about more than the treatment itself: trust, honesty and safety are at the heart of every appointment. My goal is simply to help you look and feel like the best version of yourself — never changing who you are, just enhancing what makes you <em>you</em>.",
+    "sig": "Purdi"
+  },
+  "values": {
+    "eyebrow": "The Cottage philosophy",
+    "title": "Care that never feels rushed",
+    "card1": { "title": "Longer Appointments", "body": "Time to talk, assess and treat properly — never a conveyor belt." },
+    "card2": { "title": "Honest Consultations", "body": "Clear, evidence-based advice. Only what's right for you." },
+    "card3": { "title": "Natural Results", "body": "Subtle, balanced enhancements that still look like you." },
+    "card4": { "title": "Medical Safety", "body": "Nurse-led care, premium products, ongoing professional training." }
+  },
+  "quote1": {
+    "text": "“The loveliest experience — she made me feel completely relaxed and at ease.”",
+    "attr": "Ella S. · Google review"
+  },
+  "treatTeaser": {
+    "eyebrow": "Treatments",
+    "title": "Thoughtfully chosen, expertly delivered"
+  },
+  "treatments": {
+    "cards": [
+      { "meta": "Every journey starts here", "title": "Free Consultation", "price": "Complimentary · 30 min", "body": "A relaxed, no-pressure chat so you feel completely confident in your treatment and your practitioner.", "course": "", "book": true },
+      { "meta": "Skin health", "title": "Microneedling", "price": "From £30", "body": "Stimulates natural collagen to improve texture, soften fine lines and brighten the skin. Standard &amp; advanced options.", "course": "", "book": true },
+      { "meta": "Hydration &amp; glow", "title": "Skin Boosters", "price": "From £150", "body": "Profhilo &amp; Jalupro — deep hydration, firmness and a subtle “5-point facelift” glow from within.", "course": "", "book": true },
+      { "meta": "Repair &amp; rejuvenate", "title": "Polynucleotides", "price": "From £150", "body": "Encourages the skin's natural repair — for face, under-eyes, neck, hands and décolletage.", "course": "", "book": true },
+      { "meta": "Balance &amp; definition", "title": "Dermal Fillers", "price": "From £140", "body": "Lips, cheeks, chin and jawline — restoring volume and harmony while keeping everything natural.", "course": "", "book": true },
+      { "meta": "Prescription · by consultation", "title": "Wrinkle Relaxing", "price": "Enquire", "body": "Anti-wrinkle &amp; prescription treatments require a face-to-face prescriber consultation for suitability.", "course": "", "book": false }
+    ]
+  },
+  "cottage": {
+    "eyebrow": "The Cottage",
+    "title": "A private retreat, tucked away from the high street",
+    "body": "Limewashed walls, olive trees, oak and antique brass — every detail is designed so you relax the moment you arrive. A calm, Mediterranean-inspired space in the Worcestershire countryside.",
+    "img1": { "src": "images/room.jpg", "alt": "Treatment room" },
+    "img2": { "src": "images/hall.jpg", "alt": "Hallway with olive tree" },
+    "img3": { "src": "images/exterior.jpg", "alt": "The cottage exterior" },
+    "feature1": "Complete privacy &amp; a peaceful setting",
+    "feature2": "Easy, free parking right outside",
+    "feature3": "Longer appointments — never rushed",
+    "feature4": "A warm, welcoming atmosphere"
+  },
+  "quote2": {
+    "text": "“I felt truly listened to for the first time in my Botox journey — incredibly warm, welcoming and knowledgeable.”",
+    "attr": "Jennifer S. · 5.0 on Google"
+  },
+  "contactTeaser": {
+    "eyebrow": "Visit The Cottage",
+    "title": "Come and see us"
+  },
+  "ctaBox": {
+    "title": "Book your free consultation",
+    "body": "Every journey begins with a relaxed, no-obligation chat. Booking takes less than a minute."
   }
 }
