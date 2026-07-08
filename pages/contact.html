@@ -21,46 +21,40 @@
 
 <!-- wx:partial header -->
 <section class="page-hero">
-  <p class="eyebrow">Contact</p>
-  <h1>Come and see us</h1>
-  <p>Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you.</p>
+  <p class="eyebrow" data-wx="pageHero.eyebrow">Contact</p>
+  <h1 data-wx="pageHero.title">Come and see us</h1>
+  <p data-wx="pageHero.tag">Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you.</p>
 </section>
 
 <section class="contact-sec">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.4rem">Send a message</h2>
-      <p style="color:var(--coffee-soft);margin-bottom:1rem">I'll get back to you personally, usually within a day.</p>
+      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.4rem" data-wx="formIntro.title">Send a message</h2>
+      <p style="color:var(--coffee-soft);margin-bottom:1rem" data-wx="formIntro.body">I'll get back to you personally, usually within a day.</p>
       <form class="cform" id="cform" novalidate>
-        <label for="nm">Your name</label>
+        <label for="nm" data-wx="form.nameLabel">Your name</label>
         <input id="nm" name="name" type="text" autocomplete="name" required>
-        <label for="em">Email</label>
+        <label for="em" data-wx="form.emailLabel">Email</label>
         <input id="em" name="email" type="email" autocomplete="email" required>
-        <label for="ph">Phone (optional)</label>
+        <label for="ph" data-wx="form.phoneLabel">Phone (optional)</label>
         <input id="ph" name="phone" type="tel" autocomplete="tel">
-        <label for="msg">How can I help?</label>
-        <textarea id="msg" name="message" placeholder="Tell me a little about what you're interested in…"></textarea>
-        <label class="consent"><input type="checkbox" id="gdpr" required> <span>I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.</span></label>
+        <label for="msg" data-wx="form.messageLabel">How can I help?</label>
+        <textarea id="msg" name="message" data-wx-attr="placeholder:form.messagePlaceholder" placeholder="Tell me a little about what you're interested in…"></textarea>
+        <label class="consent"><input type="checkbox" id="gdpr" required> <span data-wx="form.consentText">I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.</span></label>
         <button class="btn btn-primary" type="submit">Send message</button>
-        <div class="thanks" id="thanks">Thank you — your message has been noted. (Demo preview: live email delivery is wired up when the site goes live.)</div>
+        <div class="thanks" id="thanks" data-wx="form.thanksText">Thank you — your message has been noted. (Demo preview: live email delivery is wired up when the site goes live.)</div>
       </form>
     </div>
     <div class="reveal">
-      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.6rem">The Cottage</h2>
-      <p class="info-line">8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA</p>
-      <p class="info-line"><a href="tel:07401562462" style="border-bottom:1px solid var(--brass)">07401 562 462</a></p>
-      <p class="info-line"><a href="mailto:cottageaestheticshartlebury@gmail.com" style="border-bottom:1px solid var(--brass)">cottageaestheticshartlebury@gmail.com</a></p>
-      <p class="info-line" style="margin-top:.8rem"><strong>Easy, free parking</strong> right outside the clinic.</p>
-      <ul class="hours" style="margin-top:1.2rem">
-        <li><span>Monday</span><span>10:00 – 19:00</span></li>
-        <li><span>Tuesday</span><span>10:00 – 19:00</span></li>
-        <li><span>Wednesday</span><span class="closed">By phone enquiry</span></li>
-        <li><span>Thursday</span><span>10:00 – 19:00</span></li>
-        <li><span>Friday</span><span>10:00 – 17:00</span></li>
-        <li><span>Saturday</span><span>11:00 – 16:00</span></li>
-        <li><span>Sunday</span><span class="closed">Closed</span></li>
+      <h2 style="color:var(--mocha);font-size:1.9rem;margin-bottom:.6rem" data-wx="info.title">The Cottage</h2>
+      <p class="info-line" data-wx="@address">8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA</p>
+      <p class="info-line"><a href="tel:07401562462" style="border-bottom:1px solid var(--brass)" data-wx-href="@phoneHref" data-wx="@phone">07401 562 462</a></p>
+      <p class="info-line"><a href="mailto:cottageaestheticshartlebury@gmail.com" style="border-bottom:1px solid var(--brass)" data-wx-href="@emailHref" data-wx="@email">cottageaestheticshartlebury@gmail.com</a></p>
+      <p class="info-line" style="margin-top:.8rem" data-wx="info.parkingNote"><strong>Easy, free parking</strong> right outside the clinic.</p>
+      <ul class="hours" style="margin-top:1.2rem" data-wx-list="@hours">
+        <li data-wx-list-item><span data-wx=".day">Day</span><span class="closed" data-wx-if=".closed" data-wx=".value">Value</span><span data-wx-if="!.closed" data-wx=".value">Value</span></li>
       </ul>
-      <p class="socials" style="margin-top:1.4rem"><a href="https://www.instagram.com/cottageaesthetics" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61572079150383" target="_blank" rel="noopener">Facebook</a></p>
+      <p class="socials" style="margin-top:1.4rem"><a href="https://www.instagram.com/cottageaesthetics" target="_blank" rel="noopener" data-wx-href="@social.instagram">Instagram</a><a href="https://www.facebook.com/profile.php?id=61572079150383" target="_blank" rel="noopener" data-wx-href="@social.facebook">Facebook</a></p>
       <p style="margin-top:1.4rem"><a class="btn btn-primary js-book" href="#">Book Online</a></p>
     </div>
   </div>
