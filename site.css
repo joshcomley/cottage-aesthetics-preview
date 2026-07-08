@@ -44,7 +44,7 @@
   header:not(.scrolled) .menu-toggle{color:#f3ead9}
 
   .hero{min-height:100vh;display:flex;align-items:center;position:relative;
-    background:url('images/lounge.jpg') center/cover no-repeat;color:#fbf4e8}
+    background-position:center;background-size:cover;background-repeat:no-repeat;color:#fbf4e8}
   header:not(.scrolled) .brand,header:not(.scrolled) .nav-links a.lnk,header:not(.scrolled) .menu-toggle{text-shadow:0 1px 9px rgba(18,12,8,.6)}
   .hero-band{width:100%;padding:2.3rem 0;background:rgba(18,12,9,.64)}
   .hero .wrap{padding-top:0}
