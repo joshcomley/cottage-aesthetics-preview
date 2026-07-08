@@ -6,5 +6,34 @@
     "navLabel": "Clinic Policies",
     "inNav": false,
     "navOrder": 0
+  },
+  "pageHero": {
+    "eyebrow": "The details",
+    "title": "Clinic Policies",
+    "tag": "A little clarity so your visit is relaxed and stress-free."
+  },
+  "draftFlag": "Draft policy text — placeholder figures below (deposit amount, notice period). Purdi to set her actual terms before launch.",
+  "deposits": {
+    "title": "Deposits",
+    "body": "A small deposit may be required to secure your appointment. This is deducted from the total cost of your treatment on the day."
+  },
+  "cancellations": {
+    "title": "Cancellations &amp; rescheduling",
+    "body": "Please give at least <strong>[48 hours']</strong> notice if you need to cancel or rearrange, so the appointment can be offered to someone else. Cancellations with less notice may result in the deposit being retained."
+  },
+  "lateArrivals": {
+    "title": "Late arrivals",
+    "body": "Appointments are never rushed, so timing matters. If you arrive late, your treatment may need to be shortened to protect the following client's appointment, or rearranged where necessary."
+  },
+  "prescriptionTreatments": {
+    "title": "Prescription treatments",
+    "body": "Prescription treatments (such as anti-wrinkle injections) require a face-to-face prescriber consultation to assess suitability and cannot be booked directly online."
+  },
+  "comfortSafety": {
+    "title": "Your comfort &amp; safety",
+    "body": "If you feel unwell, or have any concerns before your appointment, please get in touch — your wellbeing always comes first, and there's never any pressure to proceed."
+  },
+  "ctaStrip": {
+    "title": "Any questions?"
   }
 }
