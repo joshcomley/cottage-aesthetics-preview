@@ -6,5 +6,31 @@
     "navLabel": "Aftercare",
     "inNav": false,
     "navOrder": 0
+  },
+  "pageHero": {
+    "eyebrow": "Looking after your results",
+    "title": "Aftercare",
+    "tag": "Great results continue at home. You'll always receive personalised aftercare at your appointment — this is a general guide."
+  },
+  "draftFlag": "General guidance only — Purdi to confirm the exact, treatment-specific aftercare wording before launch. Your personalised aftercare is always given in clinic.",
+  "first24h": {
+    "title": "In the first 24 hours",
+    "item1": "Avoid touching, rubbing or applying pressure to the treated area.",
+    "item2": "Keep the area clean and avoid makeup where advised.",
+    "item3": "Avoid strenuous exercise, saunas, steam rooms and very hot showers.",
+    "item4": "Skip alcohol and stay well hydrated."
+  },
+  "followingDays": {
+    "title": "Over the following days",
+    "item1": "Protect the skin with a broad-spectrum SPF and avoid direct sun / sunbeds.",
+    "item2": "Avoid facials, exfoliation or active skincare until advised it's safe.",
+    "item3": "Some redness, swelling or tenderness can be normal and usually settles quickly."
+  },
+  "whenToContact": {
+    "title": "When to get in touch",
+    "body": "If you have any concerns at all after your treatment, please contact Purdi straight away — you're never left to wonder. Your safety and comfort always come first."
+  },
+  "ctaStrip": {
+    "title": "Questions about your aftercare?"
   }
 }
