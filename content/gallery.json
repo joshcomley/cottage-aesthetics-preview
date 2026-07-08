@@ -6,5 +6,55 @@
     "navLabel": "Before &amp; After",
     "inNav": true,
     "navOrder": 30
+  },
+  "pageHero": {
+    "title": "Before &amp; After",
+    "tag": "Genuine, unretouched results — shared only with each client's full consent. Drag the slider to reveal the after."
+  },
+  "note": "Every photo below is a real Cottage Aesthetics client, shared with their permission and shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters, polynucleotides) are added as further consented photos come in.",
+  "compare": {
+    "eyebrow": "Drag to compare",
+    "title": "See the difference",
+    "body": "Pull the handle across each photo to reveal the result."
+  },
+  "more": {
+    "eyebrow": "More results",
+    "title": "Tap to view full size",
+    "body": "A closer look at further transformations, from more angles."
+  },
+  "ctaStrip": {
+    "title": "Curious what's possible for you?"
+  },
+  "gallery": {
+    "sliders": [
+      {
+        "cat": "lips",
+        "title": "Lip Enhancement",
+        "sub": "Dermal filler",
+        "before": { "src": "images/ba-lips-1-before.jpg", "alt": "Lip Enhancement — before" },
+        "after": { "src": "images/ba-lips-1-after.jpg", "alt": "Lip Enhancement — after" }
+      },
+      {
+        "cat": "lips",
+        "title": "Lip Definition",
+        "sub": "Dermal filler",
+        "before": { "src": "images/ba-lips-2-before.jpg", "alt": "Lip Definition — before" },
+        "after": { "src": "images/ba-lips-2-after.jpg", "alt": "Lip Definition — after" }
+      },
+      {
+        "cat": "cheeks",
+        "title": "Cheek &amp; Lip Definition",
+        "sub": "Dermal filler",
+        "before": { "src": "images/ba-cheeks-before.jpg", "alt": "Cheek & Lip Definition — before" },
+        "after": { "src": "images/ba-cheeks-after.jpg", "alt": "Cheek & Lip Definition — after" }
+      }
+    ],
+    "tiles": [
+      {
+        "cat": "chin",
+        "title": "Chin &amp; Jaw Filler",
+        "img": { "src": "images/ba-chin.jpg", "alt": "Chin and jaw filler before and after, multiple angles" }
+      }
+    ]
   }
 }
