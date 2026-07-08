@@ -25,4 +25,4 @@ failures across text/links/images/computed-styles/screenshots, all 9 pages,
 desktop + mobile — clean on the first attempt (no bugs found this page).
 
 ## Links
-PR: (fill in when opened)
+PR: cottage-aesthetics-preview#5 — merged
