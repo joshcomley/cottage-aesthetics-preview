@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Before & After — Cottage Aesthetics",
+    "description": "Genuine, consented before and after results from Cottage Aesthetics. Drag to reveal the after, or tap any result to view full size.",
+    "ogImage": { "src": "images/exterior.jpg", "alt": "The cottage exterior" },
+    "navLabel": "Before &amp; After",
+    "inNav": true,
+    "navOrder": 30
+  }
+}

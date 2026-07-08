@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "About Purdi — Cottage Aesthetics",
+    "description": "Purdi — registered nurse and founder of Cottage Aesthetics, a calm nurse-led medical aesthetics clinic in Hartlebury.",
+    "ogImage": { "src": "images/purdi.jpg", "alt": "Purdi, founder of Cottage Aesthetics" },
+    "navLabel": "About",
+    "inNav": true,
+    "navOrder": 10
+  }
+}

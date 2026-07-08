@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Clinic Policies — Cottage Aesthetics",
+    "description": "Booking, deposit, cancellation and late-arrival policies for Cottage Aesthetics, Hartlebury.",
+    "ogImage": { "src": "images/lounge.jpg", "alt": "The Cottage lounge" },
+    "navLabel": "Clinic Policies",
+    "inNav": false,
+    "navOrder": 0
+  }
+}

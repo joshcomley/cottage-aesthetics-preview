@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Contact — Cottage Aesthetics",
+    "description": "Contact Cottage Aesthetics in Hartlebury — book a free consultation, opening hours, location and parking.",
+    "ogImage": { "src": "images/exterior.jpg", "alt": "The cottage exterior" },
+    "navLabel": "Contact",
+    "inNav": true,
+    "navOrder": 50
+  }
+}
