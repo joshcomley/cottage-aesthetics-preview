@@ -42,4 +42,4 @@ failures across text/links/images/computed-styles/screenshots, all 9 pages,
 desktop + mobile.
 
 ## Links
-PR: (fill in when opened)
+PR: cottage-aesthetics-preview#3 — merged
