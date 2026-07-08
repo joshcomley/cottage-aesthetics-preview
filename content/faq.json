@@ -6,5 +6,26 @@
     "navLabel": "FAQ",
     "inNav": false,
     "navOrder": 0
+  },
+  "pageHero": {
+    "eyebrow": "Good to know",
+    "title": "Frequently Asked Questions",
+    "tag": "A few things clients often ask. Anything else — just get in touch."
+  },
+  "draftFlag": "Draft answers below — Purdi to confirm/adjust the wording before launch.",
+  "faq": {
+    "items": [
+      { "question": "Do I need a consultation first?", "answer": "Yes — every journey begins with a free, no-obligation consultation. It's a relaxed chat so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made." },
+      { "question": "Will treatments hurt?", "answer": "Most clients find treatments very comfortable. Where appropriate, numbing is used, and Purdi takes her time to keep you at ease throughout. Any discomfort is discussed honestly at your consultation." },
+      { "question": "When will I see results, and how long do they last?", "answer": "This varies by treatment — some are immediate, others develop over a few weeks as collagen builds. Longevity depends on the treatment and the individual. Purdi will talk you through realistic expectations for your chosen treatment." },
+      { "question": "Is there any downtime?", "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised aftercare so you know exactly what to expect and how to look after your skin." },
+      { "question": "Why can't I book Botox® and other prescription treatments online?", "answer": "Due to UK prescribing regulations, prescription treatments can't be booked directly. Instead, you enquire and Purdi arranges a face-to-face prescriber consultation to determine whether the treatment is medically suitable for you." },
+      { "question": "How do I book?", "answer": "Simply use the <a href=\"#\" class=\"js-book\" rel=\"noopener noreferrer\">Book Now</a> button anywhere on the site to book online, or get in touch by phone or email. Prescription treatments start with an enquiry." },
+      { "question": "Where are you, and is there parking?", "answer": "Cottage Aesthetics is in the peaceful village of Hartlebury (DY10 4JA), tucked away from the high street — with easy, free parking right outside." },
+      { "question": "What products do you use?", "answer": "Only premium, medical-grade products, chosen and tailored to your individual skin concerns. Purdi will explain exactly what's being used and why." }
+    ]
+  },
+  "ctaStrip": {
+    "title": "Still have a question?"
   }
 }
