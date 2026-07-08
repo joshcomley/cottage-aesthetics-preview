@@ -6,5 +6,67 @@
     "navLabel": "Treatments",
     "inNav": true,
     "navOrder": 20
+  },
+  "pageHero": {
+    "eyebrow": "Treatments",
+    "title": "Considered, natural results",
+    "tag": "Every treatment begins with an honest consultation. Prices are held deliberately fair — exceptional care shouldn't mean inflated costs."
+  },
+  "sections": [
+    {
+      "title": "Start Here",
+      "sub": "Every journey begins with a relaxed, no-obligation consultation.",
+      "cards": [
+        { "meta": "30 minutes", "title": "Free Consultation", "price": "Complimentary", "body": "A calm chat so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.", "course": "", "book": true }
+      ]
+    },
+    {
+      "title": "Microneedling",
+      "sub": "Stimulating your skin's natural collagen for healthier, brighter, smoother skin.",
+      "cards": [
+        { "meta": "45 minutes · incl. consultation", "title": "Standard Microneedling", "price": "£30 per session", "body": "Improves texture, reduces acne scarring and softens fine lines using pure Hyaluronic Acid serum.", "course": "£120 for a course of 5", "book": true },
+        { "meta": "45 minutes · incl. consultation", "title": "Advanced Microneedling", "price": "£80", "body": "Collagen induction combined with premium medical-grade skincare (Derma 2.0 / Newest), tailored to ageing, pigmentation, acne scarring and rejuvenation.", "course": "", "book": true }
+      ]
+    },
+    {
+      "title": "Skin Boosters",
+      "sub": "Deep hydration and a subtle \"5-point facelift\" glow — quality from within.",
+      "cards": [
+        { "meta": "45 minutes", "title": "Jalupro Super Hydro", "price": "£150", "body": "Deeply hydrates while improving elasticity, firmness and overall skin quality, with subtle lifting and rejuvenation.", "course": "", "book": true },
+        { "meta": "45 minutes", "title": "Profhilo", "price": "£230", "body": "A premium bio-remodelling treatment that intensely hydrates and firms for radiant, refreshed, natural-looking skin.", "course": "", "book": true }
+      ]
+    },
+    {
+      "title": "Polynucleotides",
+      "sub": "Encouraging the skin's natural repair — collagen, hydration and tissue regeneration.",
+      "cards": [
+        { "meta": "45 minutes", "title": "Polynucleotides", "price": "£150", "body": "For face, neck, hands and décolletage — improving skin quality, hydration and firmness. Product: Newest.", "course": "Course of 3 recommended", "book": true },
+        { "meta": "45 minutes", "title": "Under-Eye Polynucleotides", "price": "£150", "body": "Designed for the delicate eye area — improving hydration, strengthening the skin and reducing crepey texture. Product: Plinest.", "course": "Course of 3 recommended", "book": true }
+      ]
+    },
+    {
+      "title": "Dermal Fillers",
+      "sub": "Restoring volume and enhancing natural features while keeping perfect facial balance.",
+      "cards": [
+        { "meta": "1 hour", "title": "Lip Enhancement", "price": "£140", "body": "Restores hydration, improves symmetry and defines the lip border for beautifully balanced, natural lips.", "course": "", "book": true },
+        { "meta": "1 hour", "title": "Chin Enhancement", "price": "£140", "body": "Improves lower-facial balance and profile, adding projection and harmony between chin, lips and nose.", "course": "", "book": true },
+        { "meta": "1 hour", "title": "Cheek Enhancement", "price": "£200", "body": "Restores youthful volume, enhances cheekbone definition and gives subtle lift to the mid-face.", "course": "", "book": true },
+        { "meta": "1.5 hours", "title": "Jawline Contouring", "price": "£290", "body": "Sculpts and defines the jawline, enhancing facial proportions while keeping results natural.", "course": "", "book": true },
+        { "meta": "By consultation", "title": "Facial Rebalancing &amp; Rejuvenation", "price": "Price after consultation", "body": "A detailed facial assessment allowing multiple areas to be treated together, restoring balance, proportion and natural harmony.", "course": "", "book": false }
+      ]
+    }
+  ],
+  "rx": {
+    "title": "Prescription Treatments",
+    "sub": "Wrinkle-relaxing and wellbeing treatments — by prescriber consultation.",
+    "note": "Due to UK prescribing regulations, these treatments <strong>can't be booked online</strong>. Select a treatment to see details, then enquire — Purdi will arrange a face-to-face prescriber consultation to determine suitability.",
+    "items": [
+      { "title": "Botox®", "price": "Full Face — £330 &nbsp;·&nbsp; Three Areas — £220", "body": "Temporarily relaxes carefully selected facial muscles to soften existing lines, help prevent deeper lines forming and create a fresher, more rested appearance — while keeping natural expression." },
+      { "title": "Relfydess®", "price": "Introductory price — £280", "body": "One of the newest botulinum toxin treatments. Its highly purified formulation offers a fast onset and may provide longer-lasting results for suitable clients. Prescriber consultation required." },
+      { "title": "Vitamin B12 Complex Injections", "price": "Single — £45 &nbsp;·&nbsp; Course of 5 — £120", "body": "Vitamin B12 supports energy production, healthy nerve function and red blood cell formation. For suitable clients it may help improve energy and reduce fatigue, following assessment by an independent prescriber." }
+    ]
+  },
+  "endCta": {
+    "title": "Ready when you are"
   }
 }
