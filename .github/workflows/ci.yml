@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-build-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Checkout wixy (private; read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: joshcomley/wixy
+          ssh-key: ${{ secrets.WIXY_DEPLOY_KEY }}
+          path: wixy
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install wixy builder (core deps only — no server extras needed here)
+        working-directory: wixy
+        run: pip install -e .
+
+      - name: Install Playwright chromium (parity harness)
+        run: playwright install --with-deps chromium
+
+      - name: validate (spec/02 §10)
+        run: python -m builder validate --root . --project wixy/projects/ca.json
+
+      - name: build
+        run: python -m builder build --root . --project wixy/projects/ca.json --out _build
+
+      - name: rendered-parity check (spec/03 §5) — the pinned platform, strict screenshots
+        run: >
+          python -m builder parity
+          --serve-root _build
+          --slugs index,about,aftercare,contact,faq,gallery,policies,reviews,treatments
+          --mobile-slugs index,treatments
+          --baseline wixy/builder/tests/parity/baseline
+          --strict-screenshots

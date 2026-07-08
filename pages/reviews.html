@@ -23,6 +23,7 @@
 </head>
 <body data-page="reviews">
 
+<!-- wx:partial header -->
 <section class="page-hero">
   <p class="eyebrow">Kind words from The Cottage</p>
   <h1>Client Reviews</h1>
@@ -57,5 +58,7 @@ var g=document.getElementById('grid');
 R.forEach(function(r){g.insertAdjacentHTML('beforeend',
  '<article class="rcard"><div class="stars">★★★★★</div><p class="q">'+r.t+'”</p><div class="nm">'+r.n+'<br><span class="src">Google review</span></div></article>');});
 </script>
+<!-- wx:partial footer -->
+<!-- wx:partial booking-modal -->
 </body>
 </html>

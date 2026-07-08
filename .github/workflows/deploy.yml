@@ -18,9 +18,23 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout wixy (private; read-only deploy key)
+        uses: actions/checkout@v4
+        with:
+          repository: joshcomley/wixy
+          ssh-key: ${{ secrets.WIXY_DEPLOY_KEY }}
+          path: wixy
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install wixy builder
+        working-directory: wixy
+        run: pip install -e .
+      - name: Build site
+        run: python -m builder build --root . --project wixy/projects/ca.json --out _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "_site"
       - id: deployment
         uses: actions/deploy-pages@v4
