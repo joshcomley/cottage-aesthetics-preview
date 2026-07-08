@@ -6,5 +6,25 @@
     "navLabel": "Reviews",
     "inNav": true,
     "navOrder": 40
+  },
+  "pageHero": {
+    "eyebrow": "Kind words from The Cottage",
+    "title": "Client Reviews"
+  },
+  "ctaStrip": {
+    "title": "Come and experience it for yourself"
+  },
+  "reviews": {
+    "items": [
+      { "name": "Bev D.", "text": "I visited Cottage Aesthetics for Jalupro Super Hydro Skin Boosters with Purdi and once again had a fantastic experience. Her clinic was as welcoming, beautiful and spotless as ever.”" },
+      { "name": "Sophie V.", "text": "I had such a positive experience with Purdi. I accidentally arrived a day early and she still managed to fit me in — it says a lot about her care for her clients.”" },
+      { "name": "Lucy C.", "text": "Skin boosters and botox at Cottage Aesthetics — couldn't be more impressed. Everything was explained so clearly, including the science, which made me feel completely informed and confident.”" },
+      { "name": "Taylor J.", "text": "I recently had Botox at Cottage Aesthetics and couldn't be happier with the results! Professional, friendly and relaxing from start to finish. Purdi took her time to explain everything.”" },
+      { "name": "Lucy H.", "text": "My first time having lip filler. I was quite worried but Purdi spent ages discussing what I wanted and any concerns I had. She really put me at ease.”" },
+      { "name": "Jennifer S.", "text": "I felt truly listened to for the first time in my Botox journey — incredibly warm, welcoming and knowledgeable, and she tailors your treatment to you.”" },
+      { "name": "Laura L.", "text": "A wonderful experience. From the moment I arrived I felt completely at ease. A truly lovely person — warm, reassuring and clearly very talented.”" },
+      { "name": "Ella S.", "text": "The loveliest experience getting my first microneedling treatment. Purdi talked me through every step and made me feel really comfortable and relaxed.”" },
+      { "name": "Emma C.", "text": "Purdi has done a fantastic job for me. I'd been to a couple of places before that weren't delivering results — she listened, and I'm thrilled. Would recommend her in a heartbeat!”" }
+    ]
   }
 }

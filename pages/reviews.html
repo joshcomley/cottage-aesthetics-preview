@@ -25,39 +25,25 @@
 
 <!-- wx:partial header -->
 <section class="page-hero">
-  <p class="eyebrow">Kind words from The Cottage</p>
-  <h1>Client Reviews</h1>
+  <p class="eyebrow" data-wx="pageHero.eyebrow">Kind words from The Cottage</p>
+  <h1 data-wx="pageHero.title">Client Reviews</h1>
   <div class="stars-hero">★★★★★ &nbsp;5.0 on Google</div>
 </section>
 
 <section class="treat">
-  <div class="wrap"><div class="rgrid" id="grid"></div></div>
+  <div class="wrap"><div class="rgrid" id="grid" data-wx-list="reviews.items">
+    <article class="rcard" data-wx-list-item><div class="stars">★★★★★</div><p class="q" data-wx=".text">I visited Cottage Aesthetics for Jalupro Super Hydro Skin Boosters with Purdi and once again had a fantastic experience. Her clinic was as welcoming, beautiful and spotless as ever.”</p><div class="nm"><span data-wx=".name">Bev D.</span><br><span class="src">Google review</span></div></article>
+  </div></div>
 </section>
 
 <section class="cta-strip">
   <div class="wrap reveal">
-    <h2>Come and experience it for yourself</h2>
+    <h2 data-wx="ctaStrip.title">Come and experience it for yourself</h2>
     <a class="btn btn-primary js-book" href="#">Book a Free Consultation</a>
   </div>
 </section>
 
 <script src="site.js"></script>
-<script>
-const R=[
- {n:"Bev D.",t:"I visited Cottage Aesthetics for Jalupro Super Hydro Skin Boosters with Purdi and once again had a fantastic experience. Her clinic was as welcoming, beautiful and spotless as ever."},
- {n:"Sophie V.",t:"I had such a positive experience with Purdi. I accidentally arrived a day early and she still managed to fit me in — it says a lot about her care for her clients."},
- {n:"Lucy C.",t:"Skin boosters and botox at Cottage Aesthetics — couldn't be more impressed. Everything was explained so clearly, including the science, which made me feel completely informed and confident."},
- {n:"Taylor J.",t:"I recently had Botox at Cottage Aesthetics and couldn't be happier with the results! Professional, friendly and relaxing from start to finish. Purdi took her time to explain everything."},
- {n:"Lucy H.",t:"My first time having lip filler. I was quite worried but Purdi spent ages discussing what I wanted and any concerns I had. She really put me at ease."},
- {n:"Jennifer S.",t:"I felt truly listened to for the first time in my Botox journey — incredibly warm, welcoming and knowledgeable, and she tailors your treatment to you."},
- {n:"Laura L.",t:"A wonderful experience. From the moment I arrived I felt completely at ease. A truly lovely person — warm, reassuring and clearly very talented."},
- {n:"Ella S.",t:"The loveliest experience getting my first microneedling treatment. Purdi talked me through every step and made me feel really comfortable and relaxed."},
- {n:"Emma C.",t:"Purdi has done a fantastic job for me. I'd been to a couple of places before that weren't delivering results — she listened, and I'm thrilled. Would recommend her in a heartbeat!"}
-];
-var g=document.getElementById('grid');
-R.forEach(function(r){g.insertAdjacentHTML('beforeend',
- '<article class="rcard"><div class="stars">★★★★★</div><p class="q">'+r.t+'”</p><div class="nm">'+r.n+'<br><span class="src">Google review</span></div></article>');});
-</script>
 <!-- wx:partial footer -->
 <!-- wx:partial booking-modal -->
 </body>
