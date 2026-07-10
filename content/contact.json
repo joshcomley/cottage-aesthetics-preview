@@ -1,32 +1,35 @@
 {
+  "form": {
+    "consentText": "I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.",
+    "emailLabel": "Email",
+    "messageLabel": "How can I help?",
+    "messagePlaceholder": "Tell me a little about what you're interested in…",
+    "nameLabel": "Your name",
+    "phoneLabel": "Phone (optional)",
+    "thanksText": "Thank you — your message has been noted. For the quickest reply, please also call or email me directly using the details alongside."
+  },
+  "formIntro": {
+    "body": "I'll get back to you personally, usually within a day.",
+    "title": "Send a message"
+  },
+  "info": {
+    "parkingNote": "<strong>Easy, free parking</strong> right outside the clinic.",
+    "title": "The Cottage"
+  },
   "meta": {
-    "title": "Contact — Cottage Aesthetics",
     "description": "Contact Cottage Aesthetics in Hartlebury — book a free consultation, opening hours, location and parking.",
-    "ogImage": { "src": "images/exterior.jpg", "alt": "The cottage exterior" },
-    "navLabel": "Contact",
     "inNav": true,
-    "navOrder": 50
+    "navLabel": "Contact",
+    "navOrder": 50,
+    "ogImage": {
+      "alt": "The cottage exterior",
+      "src": "images/exterior.jpg"
+    },
+    "title": "Contact — Cottage Aesthetics"
   },
   "pageHero": {
     "eyebrow": "Contact",
-    "title": "Come and see us",
-    "tag": "Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you."
-  },
-  "formIntro": {
-    "title": "Send a message",
-    "body": "I'll get back to you personally, usually within a day."
-  },
-  "form": {
-    "nameLabel": "Your name",
-    "emailLabel": "Email",
-    "phoneLabel": "Phone (optional)",
-    "messageLabel": "How can I help?",
-    "messagePlaceholder": "Tell me a little about what you're interested in…",
-    "consentText": "I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.",
-    "thanksText": "Thank you — your message has been noted. (Demo preview: live email delivery is wired up when the site goes live.)"
-  },
-  "info": {
-    "title": "The Cottage",
-    "parkingNote": "<strong>Easy, free parking</strong> right outside the clinic."
+    "tag": "Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you.",
+    "title": "Come and see us"
   }
 }
