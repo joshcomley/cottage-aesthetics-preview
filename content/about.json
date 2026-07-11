@@ -1,52 +1,67 @@
 {
-  "meta": {
-    "title": "About Purdi — Cottage Aesthetics",
-    "description": "Purdi — registered nurse and founder of Cottage Aesthetics, a calm nurse-led medical aesthetics clinic in Hartlebury.",
-    "ogImage": { "src": "images/purdi.jpg", "alt": "Purdi, founder of Cottage Aesthetics" },
-    "navLabel": "About",
-    "inNav": true,
-    "navOrder": 10
-  },
-  "pageHero": {
-    "eyebrow": "About",
-    "title": "Meet Purdi",
-    "tag": "Registered nurse, founder of Cottage Aesthetics — and the reason clients call it simply \"The Cottage.\""
-  },
   "about": {
-    "img": { "src": "images/purdi.jpg", "alt": "Purdi, founder of Cottage Aesthetics" },
-    "eyebrow": "Nurse-led care",
-    "title": "Hello, I'm Purdi",
     "body1": "I'm a registered nurse with over 15 years of NHS and private healthcare experience, and the founder of Cottage Aesthetics — which has proudly welcomed clients for the past 18 months.",
     "body2": "Throughout my career I've worked within Plastic Surgery, Dermatology and specialist reconstructive services, caring for patients undergoing life-changing procedures. Working alongside highly skilled surgeons gave me an exceptional understanding of skin health, wound healing, facial anatomy, and the importance of precision, symmetry and attention to detail.",
     "body3": "These environments taught me that every patient is unique — the very best outcomes come from understanding the individual in front of you, respecting their natural features and creating results that look balanced, refreshed and authentically <em>them</em>.",
-    "sig": "Purdi"
-  },
-  "philosophy": {
-    "eyebrow": "My philosophy",
-    "title": "Everyone deserves high-quality care — without inflated prices",
-    "body1": "Great care extends far beyond the treatment itself. Trust, honesty, safety and communication are at the heart of every positive journey. I believe you should fully understand your options, feel confident in your practitioner, and know you're receiving care based on knowledge, experience and evidence.",
-    "body2": "Enhancing our appearance should never mean fitting into a mould where everyone leaves looking identical. My goal is simply to help you look and feel like the best version of yourself — never changing who you are, just enhancing what makes you uniquely you. That means longer appointments, honest consultations, individual treatment plans, premium products and genuinely natural-looking results."
+    "eyebrow": "Nurse-led care",
+    "img": {
+      "alt": "Purdi, founder of Cottage Aesthetics",
+      "src": "images/purdi.jpg"
+    },
+    "sig": "Purdi",
+    "title": "Hello, I'm Purdi"
   },
   "cottage": {
-    "eyebrow": "The Cottage",
-    "title": "A calm retreat in the Worcestershire countryside",
     "body1": "Cottage Aesthetics sits in the peaceful village of Hartlebury, tucked away from the busy high street. Limewashed walls, olive trees, oak and antique brass — every detail is here so you relax from the moment you arrive.",
     "body2": "Complete privacy · easy free parking · longer, unhurried appointments · a warm, welcoming atmosphere.",
-    "img1": { "src": "images/room.jpg", "alt": "Treatment room" },
-    "img2": { "src": "images/lounge.jpg", "alt": "The lounge" },
-    "img3": { "src": "images/exterior.jpg", "alt": "The cottage exterior" }
+    "eyebrow": "The Cottage",
+    "img1": {
+      "alt": "Treatment room",
+      "src": "images/room.jpg"
+    },
+    "img2": {
+      "alt": "The lounge",
+      "src": "images/lounge.jpg"
+    },
+    "img3": {
+      "alt": "The cottage exterior",
+      "src": "images/exterior.jpg"
+    },
+    "title": "A calm retreat in the Worcestershire countryside"
   },
   "creds": {
     "eyebrow": "Standards &amp; safety",
-    "title": "Care you can trust",
     "item1": "Registered with the Nursing &amp; Midwifery Council (NMC)",
     "item2": "Comprehensive medical indemnity insurance",
     "item3": "Advanced training in every treatment offered",
     "item4": "Currently completing a Level 7 qualification in Aesthetic Medicine",
     "item5": "Ongoing continuing professional development",
-    "item6": "Evidence-based, nurse-led medical care"
+    "item6": "Evidence-based, nurse-led medical care",
+    "title": "Care you can trust"
   },
   "ctaStrip": {
     "title": "Come and meet me at The Cottage"
+  },
+  "meta": {
+    "description": "Purdi — registered nurse and founder of Cottage Aesthetics, a calm nurse-led medical aesthetics clinic in Hartlebury.",
+    "inNav": true,
+    "navLabel": "About",
+    "navOrder": 10,
+    "ogImage": {
+      "alt": "Purdi, founder of Cottage Aesthetics",
+      "src": "images/purdi.jpg"
+    },
+    "title": "About Purdi — Cottage Aesthetics"
+  },
+  "pageHero": {
+    "eyebrow": "About",
+    "tag": "Registered nurse, founder of Cottage Aesthetics — and the reason clients call it simply \"The Cottage.\"",
+    "title": "Meet Purdi2"
+  },
+  "philosophy": {
+    "body1": "Great care extends far beyond the treatment itself. Trust, honesty, safety and communication are at the heart of every positive journey. I believe you should fully understand your options, feel confident in your practitioner, and know you're receiving care based on knowledge, experience and evidence.",
+    "body2": "Enhancing our appearance should never mean fitting into a mould where everyone leaves looking identical. My goal is simply to help you look and feel like the best version of yourself — never changing who you are, just enhancing what makes you uniquely you. That means longer appointments, honest consultations, individual treatment plans, premium products and genuinely natural-looking results.",
+    "eyebrow": "My philosophy",
+    "title": "Everyone deserves high-quality care — without inflated prices"
   }
 }
