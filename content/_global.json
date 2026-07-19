@@ -1,38 +1,100 @@
 {
-  "brand": { "line1": "Cottage", "line2": "Aesthetics" },
-  "navExtra": [],
+  "address": "8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA",
   "bookingUrl": "https://facesconsent.com/bookings/purdi-hadley",
-  "phone": "07401 562 462",
-  "phoneHref": "tel:07401562462",
+  "brand": {
+    "line1": "Cottage",
+    "line2": "Aesthetics"
+  },
   "email": "cottageaestheticshartlebury@gmail.com",
   "emailHref": "mailto:cottageaestheticshartlebury@gmail.com",
-  "footerTagline": "Nurse-led medical aesthetics<br>Hartlebury, Worcestershire",
-  "address": "8 Walton Cottage, Walton Road,<br>Hartlebury, Kidderminster, DY10 4JA",
-  "social": {
-    "instagram": "https://www.instagram.com/cottageaesthetics",
-    "facebook": "https://www.facebook.com/profile.php?id=61572079150383"
-  },
-  "hours": [
-    { "day": "Monday", "value": "10:00 – 19:00", "closed": false },
-    { "day": "Tuesday", "value": "10:00 – 19:00", "closed": false },
-    { "day": "Wednesday", "value": "By phone enquiry", "closed": true },
-    { "day": "Thursday", "value": "10:00 – 19:00", "closed": false },
-    { "day": "Friday", "value": "10:00 – 17:00", "closed": false },
-    { "day": "Saturday", "value": "11:00 – 16:00", "closed": false },
-    { "day": "Sunday", "value": "Closed", "closed": true }
-  ],
   "footer": {
     "explore": [
-      { "label": "About", "href": "about.html" },
-      { "label": "Treatments", "href": "treatments.html" },
-      { "label": "Before &amp; After", "href": "gallery.html" },
-      { "label": "Reviews", "href": "reviews.html" }
+      {
+        "href": "about.html",
+        "label": "About"
+      },
+      {
+        "href": "treatments.html",
+        "label": "Treatments"
+      },
+      {
+        "href": "gallery.html",
+        "label": "Before &amp; After"
+      },
+      {
+        "href": "reviews.html",
+        "label": "Reviews"
+      }
     ],
     "visit": [
-      { "label": "Contact", "href": "contact.html" },
-      { "label": "FAQ", "href": "faq.html" },
-      { "label": "Aftercare", "href": "aftercare.html" },
-      { "label": "Clinic Policies", "href": "policies.html" }
+      {
+        "href": "contact.html",
+        "label": "Contact"
+      },
+      {
+        "href": "faq.html",
+        "label": "FAQ"
+      },
+      {
+        "href": "aftercare.html",
+        "label": "Aftercare"
+      },
+      {
+        "href": "policies.html",
+        "label": "Clinic Policies"
+      }
     ]
+  },
+  "footerTagline": "Nurse-led medical aesthetics<br>Hartlebury, Worcestershire",
+  "hours": [
+    {
+      "closed": false,
+      "day": "Monday",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "closed": false,
+      "day": "Tuesday",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "closed": true,
+      "day": "Wednesday",
+      "value": "By phone enquiry"
+    },
+    {
+      "closed": false,
+      "day": "Thursday",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "closed": false,
+      "day": "Friday",
+      "value": "10:00 – 17:00"
+    },
+    {
+      "closed": false,
+      "day": "Saturday",
+      "value": "11:00 – 16:00"
+    },
+    {
+      "closed": true,
+      "day": "Sunday",
+      "value": "Closed"
+    }
+  ],
+  "nav": [
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "navExtra": [],
+  "phone": "07401 562 462",
+  "phoneHref": "tel:07401562462",
+  "social": {
+    "facebook": "https://www.facebook.com/profile.php?id=61572079150383",
+    "instagram": "https://www.instagram.com/cottageaesthetics"
   }
 }
