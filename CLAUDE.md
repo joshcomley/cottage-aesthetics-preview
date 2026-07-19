@@ -1,10 +1,11 @@
 # cottage-aesthetics-preview — Cottage Aesthetics site content
 
 This repo is **content + structure only** for `ca.cinnamons.uk` — served by
-**Wixy**, a self-hosted CMS engine (private repo `joshcomley/wixy`). The wixy
-repo's `spec/02-content-model.md` is the binding contract for everything here
-(`data-wx-*` bindings, content JSON shapes, theme, validation rules). Read it
-before making structural changes; this file is orientation, not a substitute.
+**Wixy**, a self-hosted, MIT-licensed CMS engine (`joshcomley/wixy` on GitHub,
+or your own fork of it). The wixy repo's `spec/02-content-model.md` is the
+binding contract for everything here (`data-wx-*` bindings, content JSON
+shapes, theme, validation rules). Read it before making structural changes;
+this file is orientation, not a substitute.
 
 ## What's here
 
@@ -53,11 +54,10 @@ separate elements or moving into the JSON value itself; `decisions/00003` and
 ## Never publish, never deploy — this repo cannot touch the live site
 
 Agents ship changes to this repo's `main` only: branch → PR → CI green →
-merge, per the fleet's global auto-merge rules. **Merging to `main` does not
-affect `ca.cinnamons.uk`** — the site owner presses Publish inside the Wixy
-admin UI, which pins a specific commit SHA and only then updates the live
-site. Never attempt to trigger a publish, and never claim a change is "live"
-just because it merged here.
+merge. **Merging to `main` does not affect `ca.cinnamons.uk`** — the site
+owner presses Publish inside the Wixy admin UI, which pins a specific commit
+SHA and only then updates the live site. Never attempt to trigger a publish,
+and never claim a change is "live" just because it merged here.
 
 ## Before shipping
 
