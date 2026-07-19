@@ -12,16 +12,22 @@ jobs:
       - name: Checkout site repo
         uses: actions/checkout@v4
 
-      # spec/independence/01 §3/C6: the wixy engine is MIT + public (upstream
-      # joshcomley/wixy, or your own fork of it once dual control is set up) —
-      # no auth needed to check it out, so no deploy-key secret either.
-      # `vars.WIXY_ENGINE_REPO` lets a fork point CI at ITS OWN copy of the
-      # engine (owner/repo, e.g. your-org/wixy-engine); unset defaults to
-      # upstream, which is what this repo uses until you fork.
+      # spec/independence/01 §3/C6. `vars.WIXY_ENGINE_REPO` lets a fork point CI
+      # at ITS OWN copy of the engine (owner/repo, e.g. your-org/wixy-engine);
+      # unset defaults to upstream joshcomley/wixy, which is what this repo
+      # uses until you fork. The deploy key is scoped to upstream specifically
+      # (it was issued read access to that ONE repo, back when it was private)
+      # -- still supplied for the upstream case since it keeps working
+      # unchanged whenever upstream's own visibility flips to public, but
+      # deliberately OMITTED once WIXY_ENGINE_REPO points somewhere else: a
+      # deploy key scoped to a different repo doesn't grant access there, and
+      # a real fork of an MIT/public engine is public itself, so it needs no
+      # auth at all to check out.
       - name: Checkout wixy engine
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.WIXY_ENGINE_REPO || 'joshcomley/wixy' }}
+          ssh-key: ${{ vars.WIXY_ENGINE_REPO == '' && secrets.WIXY_DEPLOY_KEY || '' }}
           path: wixy
 
       - uses: actions/setup-python@v5
