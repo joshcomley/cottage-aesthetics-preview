@@ -2,7 +2,7 @@
 
 This repo holds the content and structure for **[ca.cinnamons.uk](https://ca.cinnamons.uk)**,
 a nurse-led aesthetics clinic in Hartlebury. It is built and served by
-[**Wixy**](https://github.com/joshcomley/wixy), a private, self-hosted CMS engine — this repo
+[**Wixy**](https://github.com/joshcomley/wixy), an MIT-licensed, self-hosted CMS engine — this repo
 carries no server or build code, just templates (`pages/`, `partials/`), copy (`content/*.json`),
 theme (`theme/theme.json`), and static assets (`site.css`, `site.js`, `images/`).
 
