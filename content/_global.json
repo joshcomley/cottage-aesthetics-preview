@@ -49,18 +49,13 @@
   "hours": [
     {
       "closed": false,
-      "day": "Monday",
-      "value": "10:00 – 19:00"
-    },
-    {
-      "closed": false,
       "day": "Tuesday",
       "value": "10:00 – 19:00"
     },
     {
       "closed": true,
       "day": "Wednesday",
-      "value": "By phone enquiry"
+      "value": "Closed"
     },
     {
       "closed": false,
