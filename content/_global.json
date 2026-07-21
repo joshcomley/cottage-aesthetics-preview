@@ -45,12 +45,17 @@
       }
     ]
   },
-  "footerTagline": "Nurse-led medical aesthetics<br>Hartlebury, Worcestershire",
+  "footerTagline": "Nurse-led Medical Aesthetics\nHartlebury, Worcestershire",
   "hours": [
     {
       "closed": false,
+      "day": "Monday",
+      "value": "10:00 – 17:00"
+    },
+    {
+      "closed": false,
       "day": "Tuesday",
-      "value": "10:00 – 19:00"
+      "value": "11:00 – 19:00"
     },
     {
       "closed": true,
@@ -60,12 +65,12 @@
     {
       "closed": false,
       "day": "Thursday",
-      "value": "10:00 – 19:00"
+      "value": "11:00 – 19:00"
     },
     {
       "closed": false,
       "day": "Friday",
-      "value": "10:00 – 17:00"
+      "value": "10:00 – 16:00"
     },
     {
       "closed": false,
