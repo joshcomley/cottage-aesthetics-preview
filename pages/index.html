@@ -89,7 +89,7 @@
     <div class="tgrid" data-wx-list="treatments.cards">
       <div class="tcard reveal" data-wx-list-item>
         <div class="meta" data-wx=".meta">Every journey starts here</div>
-        <h3 data-wx=".title">Free Consultation</h3><div class="price" data-wx=".price">Complimentary · 30 min</div>
+        <h3 data-wx=".title">Free Consultation</h3><div class="price" data-wx=".price" data-wx-control="price">Complimentary · 30 min</div>
         <p class="course" data-wx-if=".course" data-wx=".course"></p>
         <p data-wx=".body">A relaxed, no-pressure chat so you feel completely confident in your treatment and your practitioner.</p>
         <a class="btn btn-primary js-book" href="#" data-wx-if=".book">Book Now</a>
@@ -140,7 +140,7 @@
       <p><a href="tel:07401562462" data-wx-href="@phoneHref" data-wx="@phone">07401 562 462</a><br>
       <a href="mailto:cottageaestheticshartlebury@gmail.com" data-wx-href="@emailHref" data-wx="@email">cottageaestheticshartlebury@gmail.com</a></p>
       <ul class="hours" data-wx-list="@hours">
-        <li data-wx-list-item><span data-wx=".day">Day</span><span class="closed" data-wx-if=".closed" data-wx=".value">Value</span><span data-wx-if="!.closed" data-wx=".value">Value</span></li>
+        <li data-wx-list-item><span data-wx=".day">Day</span><span class="closed" data-wx-if=".closed" data-wx=".value" data-wx-control="opening-hours">Value</span><span data-wx-if="!.closed" data-wx=".value" data-wx-control="opening-hours">Value</span></li>
       </ul>
     </div>
     <div class="reveal">
