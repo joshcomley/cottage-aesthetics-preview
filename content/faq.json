@@ -6,36 +6,40 @@
   "faq": {
     "items": [
       {
-        "answer": "Yes — every journey begins with a free, no-obligation consultation. It's a relaxed chat so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
+        "answer": "Before completing all treatments I will discuss your goals and the best way to achieve them. Some treatments don’t necessarily require a separately booked consultation, however there is always an option for a free, no-obligation consultation before we start your journey together. It's an opportunity to have a relaxed chat about your goals, so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
         "question": "Do I need a consultation first?"
       },
       {
-        "answer": "Most clients find treatments very comfortable. Where appropriate, numbing is used, and Purdi takes her time to keep you at ease throughout. Any discomfort is discussed honestly at your consultation.",
+        "answer": "Most clients find treatments very comfortable. Where appropriate, numbing is used, and time is taken to keep you at ease throughout. Any potential discomfort is discussed honestly at your consultation.",
         "question": "Will treatments hurt?"
       },
       {
-        "answer": "This varies by treatment — some are immediate, others develop over a few weeks as collagen builds. Longevity depends on the treatment and the individual. Purdi will talk you through realistic expectations for your chosen treatment.",
+        "answer": "This varies by treatment. Some results are immediate, others develop over a few weeks as collagen builds or products integrate. Longevity depends on the treatment and the individual. This will be discussed with you so you have realistic expectations for your chosen treatment.",
         "question": "When will I see results, and how long do they last?"
       },
       {
-        "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised aftercare so you know exactly what to expect and how to look after your skin.",
+        "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised before and aftercare advice so you know exactly what to expect and how to look after your skin.",
         "question": "Is there any downtime?"
       },
       {
-        "answer": "Due to UK prescribing regulations, prescription treatments can't be booked directly. Instead, you enquire and Purdi arranges a face-to-face prescriber consultation to determine whether the treatment is medically suitable for you.",
+        "answer": "Due to UK prescribing regulations, prescription treatments can't be booked directly. Instead, all enquires about prescription only medications such as Botox, Relfydess and vitamin injections will require a face-to-face prescriber consultation to determine whether the treatment is medically suitable for you.",
         "question": "Why can't I book Botox® and other prescription treatments online?"
       },
       {
-        "answer": "Simply use the [Book Now](#) button anywhere on the site to book online, or get in touch by phone or email. Prescription treatments start with an enquiry.",
+        "answer": "Simply use the [Book Now] button anywhere on the site to book online, or get in touch by phone, message or email. Prescription treatments start with an enquiry.",
         "question": "How do I book?"
       },
       {
-        "answer": "Cottage Aesthetics is in the peaceful village of Hartlebury (DY10 4JA), tucked away from the high street — with easy, free parking right outside.",
+        "answer": "Cottage Aesthetics is in the peaceful village of Hartlebury (DY10 4JA), tucked away from the busy high street. There is free, easy, accessible parking right outside on a private driveway. It is also easily accessible via Hartlebury Train station only a 5 minute walk away.",
         "question": "Where are you, and is there parking?"
       },
       {
-        "answer": "Only premium, medical-grade products, chosen and tailored to your individual skin concerns. Purdi will explain exactly what's being used and why.",
+        "answer": "Only premium, medical-grade, clinically proven products are used. These will be tailored to your individual skin concerns and goals. A full explanation of exactly what's being used and why will always take place so you can make informed decisions based on best evidence.",
         "question": "What products do you use?"
+      },
+      {
+        "answer": "No, I am not an independent prescriber. I am a Registered Nurse with valid NMC registration and specialist expertise in plastic surgery, dermatology, and advanced aesthetics training.\n\nRather than taking a “jack of all trades” approach, I have chosen to specialise deeply in clinical assessment, treatment planning, and hands-on treatment delivery. This allows me to refine my expertise and consistently deliver high standards in my field.\n\nI personally guide you through your entire journey, from consultation and assessment through to treatment and aftercare. Your experience is led by me at every stage, ensuring continuity, trust, and a truly personalised approach.\n\nWhere prescribing is required, I collaborate closely with a highly experienced pharmacist who is trained in aesthetic medicine and also holds an additional degree in dermatology. Their role is to provide specialist prescribing support, offering an additional layer of clinical insight, safety, and governance when needed.\n\nThis means you receive focused, specialist-led treatment delivered directly by me, with the added reassurance of advanced prescribing expertise too. The result is a thoughtful, collaborative, and clinically robust approach designed with your safety and outcomes at heart.",
+        "question": "Are you a prescriber?"
       }
     ]
   },
