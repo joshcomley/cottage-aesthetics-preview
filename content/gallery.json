@@ -1,26 +1,8 @@
 {
-  "meta": {
-    "title": "Before & After — Cottage Aesthetics",
-    "description": "Genuine, consented before and after results from Cottage Aesthetics. Drag to reveal the after, or tap any result to view full size.",
-    "ogImage": { "src": "images/exterior.jpg", "alt": "The cottage exterior" },
-    "navLabel": "Before &amp; After",
-    "inNav": true,
-    "navOrder": 30
-  },
-  "pageHero": {
-    "title": "Before &amp; After",
-    "tag": "Genuine, unretouched results — shared only with each client's full consent. Drag the slider to reveal the after."
-  },
-  "note": "Every photo below is a real Cottage Aesthetics client, shared with their permission and shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters, polynucleotides) are added as further consented photos come in.",
   "compare": {
+    "body": "Pull the handle across each photo to reveal the result.",
     "eyebrow": "Drag to compare",
-    "title": "See the difference",
-    "body": "Pull the handle across each photo to reveal the result."
-  },
-  "more": {
-    "eyebrow": "More results",
-    "title": "Tap to view full size",
-    "body": "A closer look at further transformations, from more angles."
+    "title": "See the difference"
   },
   "ctaStrip": {
     "title": "Curious what's possible for you?"
@@ -28,33 +10,75 @@
   "gallery": {
     "sliders": [
       {
+        "after": {
+          "alt": "Lip Enhancement — after",
+          "src": "images/ba-lips-1-after.jpg"
+        },
+        "before": {
+          "alt": "Lip Enhancement — before",
+          "src": "images/ba-lips-1-before.jpg"
+        },
         "cat": "lips",
-        "title": "Lip Enhancement",
         "sub": "Dermal filler",
-        "before": { "src": "images/ba-lips-1-before.jpg", "alt": "Lip Enhancement — before" },
-        "after": { "src": "images/ba-lips-1-after.jpg", "alt": "Lip Enhancement — after" }
+        "title": "Lip Enhancement"
       },
       {
+        "after": {
+          "alt": "Lip Definition — after",
+          "src": "images/ba-lips-2-after.jpg"
+        },
+        "before": {
+          "alt": "Lip Definition — before",
+          "src": "images/ba-lips-2-before.jpg"
+        },
         "cat": "lips",
-        "title": "Lip Definition",
         "sub": "Dermal filler",
-        "before": { "src": "images/ba-lips-2-before.jpg", "alt": "Lip Definition — before" },
-        "after": { "src": "images/ba-lips-2-after.jpg", "alt": "Lip Definition — after" }
+        "title": "Lip Definition"
       },
       {
+        "after": {
+          "alt": "Cheek & Lip Definition — after",
+          "src": "images/ba-cheeks-after.jpg"
+        },
+        "before": {
+          "alt": "Cheek & Lip Definition — before",
+          "src": "images/ba-cheeks-before.jpg"
+        },
         "cat": "cheeks",
-        "title": "Cheek &amp; Lip Definition",
         "sub": "Dermal filler",
-        "before": { "src": "images/ba-cheeks-before.jpg", "alt": "Cheek & Lip Definition — before" },
-        "after": { "src": "images/ba-cheeks-after.jpg", "alt": "Cheek & Lip Definition — after" }
+        "title": "Cheek &amp; Lip Definition"
       }
     ],
     "tiles": [
       {
         "cat": "chin",
-        "title": "Chin &amp; Jaw Filler",
-        "img": { "src": "images/ba-chin.jpg", "alt": "Chin and jaw filler before and after, multiple angles" }
+        "img": {
+          "alt": "Chin and jaw filler before and after, multiple angles",
+          "src": "images/ba-chin.jpg"
+        },
+        "title": "Chin &amp; Jaw Filler"
       }
     ]
+  },
+  "meta": {
+    "description": "Genuine, consented before and after results from Cottage Aesthetics. Drag to reveal the after, or tap any result to view full size.",
+    "inNav": true,
+    "navLabel": "Before &amp; After",
+    "navOrder": 30,
+    "ogImage": {
+      "alt": "Lip enhancement result — after",
+      "src": "images/ba-lips-1-after.jpg"
+    },
+    "title": "Before & After — Cottage Aesthetics"
+  },
+  "more": {
+    "body": "A closer look at further transformations, from more angles.",
+    "eyebrow": "More results",
+    "title": "Tap to view full size"
+  },
+  "note": "Every photo below is a real Cottage Aesthetics client, shared with their permission and shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters, polynucleotides) are added as further consented photos come in.",
+  "pageHero": {
+    "tag": "Genuine, unretouched results — shared only with each client's full consent. Drag the slider to reveal the after.",
+    "title": "Before &amp; After"
   }
 }
