@@ -45,9 +45,9 @@
   },
   "meta": {
     "description": "Frequently asked questions about treatments, consultations and booking at Cottage Aesthetics, Hartlebury.",
-    "inNav": false,
+    "inNav": true,
     "navLabel": "FAQ",
-    "navOrder": 0,
+    "navOrder": 45,
     "ogImage": {
       "alt": "The Cottage lounge",
       "src": "images/lounge.jpg"
