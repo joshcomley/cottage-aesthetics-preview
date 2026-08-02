@@ -37,19 +37,6 @@
       },
       {
         "after": {
-          "alt": "Cheek & Lip Definition — after",
-          "src": "images/ba-cheeks-after.jpg"
-        },
-        "before": {
-          "alt": "Cheek & Lip Definition — before",
-          "src": "images/ba-cheeks-before.jpg"
-        },
-        "cat": "cheeks",
-        "sub": "Dermal filler",
-        "title": "Cheek &amp; Lip Definition"
-      },
-      {
-        "after": {
           "alt": "Img 0969",
           "src": "images/068d7cc8-img-0969.jpg"
         },
@@ -60,19 +47,6 @@
         "cat": "lips",
         "sub": "Dermal filler",
         "title": "Lip Filler"
-      },
-      {
-        "after": {
-          "alt": "Img 0969",
-          "src": "images/068d7cc8-img-0969.jpg"
-        },
-        "before": {
-          "alt": "Img 0636",
-          "src": "images/27ea4732-img-0636.jpg"
-        },
-        "cat": "lips",
-        "sub": "Dermal filler",
-        "title": "Lip Enhancement"
       }
     ],
     "tiles": [
