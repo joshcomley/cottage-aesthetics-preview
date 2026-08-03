@@ -45,21 +45,8 @@
           "src": "images/27ea4732-img-0636.jpg"
         },
         "cat": "lips",
-        "sub": "Dermal filler",
-        "title": "Lip Filler"
-      },
-      {
-        "after": {
-          "alt": "",
-          "src": "images/7984ccaf-img-0885.jpg"
-        },
-        "before": {
-          "alt": "Img 0882",
-          "src": "images/549eaa90-img-0882.jpg"
-        },
-        "cat": "lips",
         "sub": "Dermal Filler",
-        "title": "Lip Enhancement "
+        "title": "Lip Enhancement"
       }
     ],
     "tiles": [
@@ -89,7 +76,7 @@
     "eyebrow": "More results",
     "title": "Tap to view full size"
   },
-  "note": "Every photo below is a real Cottage Aesthetics client, shared with their permission and shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters, polynucleotides) are added as further consented photos come in.",
+  "note": "Every photo below is a real Cottage Aesthetics client, shared with their permission and shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters, polynucleotides) are added as further consented photos come in",
   "pageHero": {
     "tag": "Genuine, unretouched results — shared only with each client's full consent. Drag the slider to reveal the after.",
     "title": "Before &amp; After"
