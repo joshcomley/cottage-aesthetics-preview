@@ -60,6 +60,19 @@
         "cat": "lips",
         "sub": "Dermal Filler",
         "title": "Lip Enhancement"
+      },
+      {
+        "after": {
+          "alt": "Img 1721",
+          "src": "images/cc9f64c7-img-1721-aligned.jpg"
+        },
+        "before": {
+          "alt": "Img 1723",
+          "src": "images/6bcc5b2c-img-1723-aligned.jpg"
+        },
+        "cat": "lips",
+        "sub": "Dermal Filler",
+        "title": "Lip Enhancement"
       }
     ],
     "tiles": [
