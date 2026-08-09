@@ -103,12 +103,65 @@ settle it herself in seconds where two independent AI passes couldn't. Every
 disputed item's own manifest row carries a `review_note` explaining the
 specific call.
 
+## 2026-08-09 addendum — full-corpus follow-up (58 more entries)
+
+The enumeration gap this entry originally flagged as open is now closed: the
+operator solved authenticated access himself (opened a fresh,
+automation-controlled Chrome profile with no prior login to protect, and
+logged into both platforms in it manually — see the wixy repo's Answers log
+Q-003 for the full "why" and the two automated approaches that didn't work).
+That unlocked the full historical corpus instead of just the ~34-post
+anonymous slice each platform previously allowed.
+
+**Re-enumeration**: 233/243 Instagram posts+reels found (the ~10 gap is most
+likely pinned-post duplication in the profile grid, not a missed batch); 39
+Facebook photos found across three combined discovery methods, after the
+first attempt (the Photos tab) turned out to default to a small Albums view
+rather than a flat stream — see `manifest.json`'s `enumeration` block for the
+full mechanism. A raw archive of every post (not just before/afters) — full
+resolution media, captions, dates — now lives in the wixy engine's own
+persistent project storage (`Storage/projects/ca/social-archive/`, outside
+this repo, not deployed anywhere), as reference material for future
+AI-assisted posting tools; see that folder's own README.
+
+**Classification**: of the 205 posts new since the original pass, 8 parallel
+review agents classified each against the same before/after criteria as
+before (a visible same-client, same-area comparison — not just a caption
+claiming "results"). 63 were flagged as genuine before/after comparisons.
+
+**Dedup, same rigor as the original 6-item correction below**: an image-hash
+(dHash) pass against the 33 images actually used in `gallery.json` flagged 23
+candidates as possibly similar (moderate Hamming distance). Rather than trust
+the hash mechanically, each flagged pair was viewed directly and judged on
+distinctive markers (moles, piercings, jewellery, skin texture/age) over
+superficial styling — only 1 of the 23 turned out to be a genuine duplicate
+(`DaNqV5SI7wh`, an exact dist=0 match of the existing `ba-chin.jpg`); the
+other 22 were different clients whose photos happened to share a similar
+tight-crop composition, a real and now well-evidenced dHash false-positive
+pattern for this kind of content — worth remembering for any future dedup
+pass rather than trusting distance ≤20 as "duplicate." A second pass checked
+the 63 candidates against each other (same client reposted across
+platforms/times) and found 4 genuine duplicate pairs the same way.
+
+**Result**: 58 new before/after entries, all `visible:false`, taking the
+gallery to 74 total slider entries (16 pre-existing + 58 new) — still only 7
+visible to the public, 67 now sitting hidden in Purdi's editor for her to
+review at her own pace. Full per-post detail (id, category, title, files) is
+in `manifest.json`'s `posts` array; the ~147 posts judged not-before-after
+(promotional graphics, testimonials, personal photos, informational content)
+are summarized at the aggregate level there rather than individually
+re-transcribed — their full per-post reasoning already exists verbatim in
+the implementing session's own transcript (session id
+`62708a37-43d0-4da0-b792-f4a9b9e67892`) and duplicating ~150 rejection
+reasons into this file would add substantial size for little marginal value
+over what's already durably recorded there.
+
 ## What to watch for
 
-- If decision #243 (a follow-up to #242, which auto-closed on a clarifying
-  question rather than a choice — see cmd's decision log) closes the
-  enumeration gap, expect a follow-up PR extending this same content — don't
-  assume 9 is the final count.
+- ~~If decision #243 ... closes the enumeration gap, expect a follow-up
+  PR~~ — resolved 2026-08-09, see the addendum above. The corpus is now
+  fully enumerated on both platforms; any further growth going forward is
+  just new posts Purdi makes, not a backlog.
 - `DZs3KJKjGHL` ("Lip Augmentation") is the one ambiguous import — if Purdi
   recognises it as a repost of an existing pair, she can just leave it
   switched off (or delete it) from her editor; nothing else depends on it.
