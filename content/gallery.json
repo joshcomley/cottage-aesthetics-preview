@@ -8,6 +8,24 @@
     "title": "Curious what's possible for you?"
   },
   "gallery": {
+    "categories": [
+      {
+        "label": "Lips",
+        "value": "lips"
+      },
+      {
+        "label": "Cheeks",
+        "value": "cheeks"
+      },
+      {
+        "label": "Chin &amp; Jaw",
+        "value": "chin"
+      },
+      {
+        "label": "Eyes &amp; Brows",
+        "value": "eyes"
+      }
+    ],
     "sliders": [
       {
         "after": {

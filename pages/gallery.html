@@ -109,12 +109,9 @@
       shown exactly as taken — no filters, no retouching. More treatment galleries (microneedling, skin boosters,
       polynucleotides) are added as further consented photos come in.</p>
 
-    <div class="gfilter reveal" id="gfilter">
+    <div class="gfilter reveal" id="gfilter" data-wx-list="gallery.categories">
       <button class="active" data-cat="all">All</button>
-      <button data-cat="lips">Lips</button>
-      <button data-cat="cheeks">Cheeks</button>
-      <button data-cat="chin">Chin &amp; Jaw</button>
-      <button data-cat="eyes">Eyes &amp; Brows</button>
+      <button data-wx-list-item data-wx-attr="data-cat:.value" data-wx=".label">Category</button>
     </div>
 
     <div class="ba-section-label reveal">
