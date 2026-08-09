@@ -66,17 +66,25 @@ touch/wheel scrolling is far more continuous than either synthetic pattern.
   pushes the container past a viewport-dependent size ceiling, by which point it's live in
   production before anyone notices in local testing (a dev's own gallery fixture is unlikely
   to have anywhere near 52 items).
-- The rendered-parity baseline (wixy repo, `builder/tests/parity/baseline/gallery/`) needs
-  recapturing again after this fix — its screenshot was captured against the STILL-BROKEN
-  (blank) state (decisions/00121's rebaseline predates this discovery), so the current
-  baseline is itself now a screenshot of the bug. This actually gives real regression
-  protection going forward: a future accidental revert to container-level `reveal` would show
-  up as a near-100% screenshot diff, the same signature a fully-blank page produces.
-- No dedicated automated test covers this specific interaction (scroll-reveal actually making
-  content visible) in either repo today — the wixy e2e suite covers the ADMIN editing
-  experience, not the public site's client-side JS behavior, and the parity harness's
-  screenshot check is the only thing that would now catch a regression, indirectly. A
-  purpose-built test (e.g. a Playwright spec that scrolls and asserts `.in` count) would be a
-  reasonable follow-up, but wasn't written here — this was fixed and verified by hand under
-  time pressure (production was actively broken for the site owner), not skipped by
-  oversight.
+- **Checked, not assumed: the rendered-parity baseline needed NO recapture for this fix**,
+  and — more importantly — **it never would have caught this bug, or would it catch a future
+  regression of it.** `builder/tests/parity/capture.py`'s `_force_reveal` deliberately
+  short-circuits every `.reveal` element straight to its final `opacity:1` state before ANY
+  screenshot is taken, specifically because the harness's own author already knew capture
+  never scrolls and wanted deterministic screenshots of "what a real visitor eventually
+  sees" rather than a scroll-position-dependent partial reveal. That's the right call for the
+  harness's actual job (byte/pixel-stable content regression detection) — but it means the
+  screenshot check is structurally blind to whether the reveal MECHANISM itself can ever
+  fire for a real user. Confirmed empirically: dispatched `capture-baseline.yml` against this
+  fix's own commit and it found zero diff, produced no commit — the pre-fix and post-fix
+  builds screenshot identically, because both get force-revealed before capture either way.
+- No dedicated automated test covers "does the reveal mechanism actually work for a real,
+  un-forced scroll" in either repo — the wixy e2e suite covers the ADMIN editing experience,
+  not the public site's client-side JS, and now that the parity harness is confirmed NOT to
+  cover it either (previous bullet), nothing currently guards against a regression back to
+  container-level `reveal`. A purpose-built test (e.g. a Playwright spec that scrolls WITHOUT
+  calling `_force_reveal` and asserts `.in` count reaches the total item count) would close
+  this gap — a reasonable, still-open follow-up. Not written here: this was fixed and
+  verified by hand under time pressure (production was actively broken for the site owner),
+  not skipped by oversight — but it remains a real, undefended gap, not a false sense of
+  safety from "the parity check will catch it."
