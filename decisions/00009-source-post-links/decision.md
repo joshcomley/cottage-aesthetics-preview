@@ -46,6 +46,22 @@ wixy repo's decisions/00120, not duplicated here.
 Final tally — 67 real links, 7 empty — exactly matches decisions/00008's own count of 67
 tracked imports, the strongest signal the join is complete rather than partial.
 
+## A cross-repo CI dependency, hit and fixed while shipping this
+
+This repo's own `validate-build-parity` CI job always checks out the WIXY ENGINE's
+**upstream default branch** (`.github/workflows/ci.yml`'s `actions/checkout` step, `repository:
+${{ vars.WIXY_ENGINE_REPO || 'joshcomley/wixy' }}`) — not any particular PR branch there. The
+`gallery-slider.schema.json` that `sourceUrl` needed (`additionalProperties: false`, so an
+undeclared key is a hard validation error, not a silent pass-through) lives in THAT engine
+repo, not this one. Concretely: this PR's own CI failed first with 74 `unexpected property
+'sourceUrl'` errors, because the companion wixy PR (#164, decisions/00120) hadn't merged to
+wixy's `main` yet — the schema `validate` step was running against the OLD schema. **The
+correct order is the wixy engine PR first, merged, THEN this one** (or a re-run of this repo's
+CI once the engine PR lands) — not "either order, they're independent," which was my own
+first assumption and was wrong. The admin FIELD KIND registry (`AdminFieldKind`) genuinely
+IS irrelevant to this build path (`validate`/`build`/`parity` never touch it) — only the JSON
+SCHEMA file tripped this, a narrower dependency than "the whole engine PR" but still real.
+
 ## What to watch for
 
 - Any future addition to `gallery.sliders` — by the admin wizard, a bulk import, or hand
