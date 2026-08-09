@@ -105,13 +105,29 @@ specific call.
 
 ## What to watch for
 
-- If decision #242 (or a future attempt) closes the enumeration gap, expect a
-  follow-up PR extending this same content — don't assume 9 is the final
-  count.
+- If decision #243 (a follow-up to #242, which auto-closed on a clarifying
+  question rather than a choice — see cmd's decision log) closes the
+  enumeration gap, expect a follow-up PR extending this same content — don't
+  assume 9 is the final count.
 - `DZs3KJKjGHL` ("Lip Augmentation") is the one ambiguous import — if Purdi
   recognises it as a repost of an existing pair, she can just leave it
   switched off (or delete it) from her editor; nothing else depends on it.
 - The `eyes` category will show an empty filter button on the public page
   until she switches on the one entry using it — `pages/gallery.html`'s
   inline script hides a category's filter button entirely while nothing in
-  it is currently shown, so this is expected, not a bug.
+  it is currently shown, so this is expected, not a bug. This same script
+  also, as a side effect, hides the pre-existing `cheeks` filter button
+  (`Cheeks`, line ~111) whenever nothing visible uses it — that button had
+  been permanently dead/empty since before this PR (no item had ever used
+  `cheeks`), so this is a genuine, positive fix, not a regression.
+- The wixy repo's parity baseline (`builder/tests/parity/baseline`) was
+  recaptured twice for this PR via `capture-baseline.yml`: once against
+  site-repo `main` (fixed a real pre-existing staleness — the old baseline
+  predated several since-published gallery changes), then again against
+  *this PR's branch* specifically (fixed the `Cheeks`-button-disappearing
+  diff above, which is a real, intended behaviour change this PR introduces
+  to the public page, not drift). Once this PR merges, the baseline already
+  matches `main` — no further action needed. If a future PR touches
+  `pages/gallery.html`'s filter bar again, expect the same two-step pattern:
+  content-only staleness rebaselines against `main`; a PR that changes
+  page *behaviour* needs the baseline captured from that PR's own branch.
