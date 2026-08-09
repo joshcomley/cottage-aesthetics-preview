@@ -58,6 +58,10 @@
   .ba-slider figcaption{text-align:center;margin-top:1rem;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--coffee)}
   .ba-slider figcaption .cap-sub{display:block;font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.2em;
     text-transform:uppercase;color:var(--clay);margin-top:.2rem}
+  .ba-slider figcaption .cap-source{display:inline-block;font-family:'Jost',sans-serif;font-size:.62rem;
+    letter-spacing:.15em;text-transform:uppercase;color:var(--olive);margin-top:.5rem;text-decoration:underline;
+    text-underline-offset:3px;transition:color .2s}
+  .ba-slider figcaption .cap-source:hover{color:var(--clay)}
 
   /* ---- gallery grid (lightbox tiles) ---- */
   .ba-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;max-width:560px;margin:2rem auto 0}
@@ -131,7 +135,7 @@
           <span class="bas-hint">Drag &#8592; &#8594;</span>
           <input class="bas-range" type="range" min="0" max="100" value="50" aria-label="Drag to reveal the after result">
         </div>
-        <figcaption><span data-wx=".title">Lip Enhancement</span><span class="cap-sub" data-wx=".sub">Dermal filler</span></figcaption>
+        <figcaption><span data-wx=".title">Lip Enhancement</span><span class="cap-sub" data-wx=".sub">Dermal filler</span><a class="cap-source" data-wx-if=".sourceUrl" data-wx-href=".sourceUrl" target="_blank" rel="noopener">View original post &#8599;</a></figcaption>
       </figure>
     </div>
 
