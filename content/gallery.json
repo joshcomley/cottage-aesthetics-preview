@@ -179,7 +179,7 @@
         },
         "cat": "eyes",
         "sub": "Polynucleotides ",
-        "title": "Under Eye Polynucleotides "
+        "title": "Under Eye Rejuvenation"
       },
       {
         "after": {
@@ -743,7 +743,7 @@
       {
         "after": {
           "alt": "Jawline &amp; Skin — after",
-          "src": "images/ba-ig-DPJj24GCEnd-after.jpg"
+          "src": "images/5f67e799-ba-ig-dpjj24gcend-after-aligned.jpg"
         },
         "before": {
           "alt": "Jawline &amp; Skin — before",
@@ -751,8 +751,7 @@
         },
         "cat": "chin",
         "sub": "Dermal filler",
-        "title": "Jawline &amp; Skin",
-        "visible": false
+        "title": "Jaw Enhancement"
       },
       {
         "after": {
@@ -765,8 +764,7 @@
         },
         "cat": "chin",
         "sub": "Dermal filler",
-        "title": "Jawline Contour",
-        "visible": false
+        "title": "Jawline Contour"
       },
       {
         "after": {
@@ -778,9 +776,8 @@
           "src": "images/ba-ig-DQ0JkXkCGU5-before.jpg"
         },
         "cat": "eyes",
-        "sub": "Skin booster",
-        "title": "Under-Eye Rejuvenation",
-        "visible": false
+        "sub": "Polynucleotides Eyes",
+        "title": "Under-Eye Rejuvenation"
       },
       {
         "after": {
@@ -793,13 +790,12 @@
         },
         "cat": "cheeks",
         "sub": "Dermal filler",
-        "title": "Nasolabial Folds and Cheek Dermal Filler",
-        "visible": false
+        "title": "Nasolabial Folds and Cheek Dermal Filler"
       },
       {
         "after": {
           "alt": "Lip Filler — after",
-          "src": "images/ba-ig-DRf3H3pCMJc-after.jpg"
+          "src": "images/945bf3fc-ba-ig-drf3h3pcmjc-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Filler — before",
@@ -807,13 +803,12 @@
         },
         "cat": "lips",
         "sub": "Dermal filler",
-        "title": "Lip Enhancement ",
-        "visible": false
+        "title": "Lip Enhancement "
       },
       {
         "after": {
           "alt": "Cheek Filler — after",
-          "src": "images/ba-ig-DRIHdFMCKSn-after.jpg"
+          "src": "images/8d6d9bb2-ba-ig-drihdfmcksn-after-aligned.jpg"
         },
         "before": {
           "alt": "Cheek Filler — before",
@@ -821,13 +816,12 @@
         },
         "cat": "cheeks",
         "sub": "Dermal filler",
-        "title": "Nasolabial Fold Dermal Filler",
-        "visible": false
+        "title": "Nasolabial Fold Dermal Filler"
       },
       {
         "after": {
           "alt": "Lip Enhancement — after",
-          "src": "images/ba-ig-DRVffu1iL0c-after.jpg"
+          "src": "images/c81d38cb-ba-ig-drvffu1il0c-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Enhancement — before",
@@ -835,8 +829,7 @@
         },
         "cat": "lips",
         "sub": "Dermal filler",
-        "title": "Lip Enhancement",
-        "visible": false
+        "title": "Lip Enhancement"
       },
       {
         "after": {
@@ -855,11 +848,11 @@
       {
         "after": {
           "alt": "Lip Definition — after",
-          "src": "images/ba-ig-DS74VUbCJkC-after.jpg"
+          "src": "images/518f631c-ba-ig-ds74vubcjkc-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Definition — before",
-          "src": "images/ba-ig-DS74VUbCJkC-before.jpg"
+          "src": "images/2e90ca86-ba-ig-ds74vubcjkc-before-aligned.jpg"
         },
         "cat": "lips",
         "sub": "Dermal filler",
@@ -869,7 +862,7 @@
       {
         "after": {
           "alt": "Cheek Contour — after",
-          "src": "images/ba-ig-DSHf9Y1iCpJ-after.jpg"
+          "src": "images/3edc282d-ba-ig-dshf9y1icpj-after-aligned.jpg"
         },
         "before": {
           "alt": "Cheek Contour — before",
@@ -897,7 +890,7 @@
       {
         "after": {
           "alt": "Lip Volume — after",
-          "src": "images/ba-ig-DT-uCkeiAtr-after.jpg"
+          "src": "images/d44f2a7f-ba-ig-dt-uckeiatr-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Volume — before",
@@ -905,13 +898,12 @@
         },
         "cat": "lips",
         "sub": "Dermal filler",
-        "title": "Lip Enhancement",
-        "visible": false
+        "title": "Lip Enhancement"
       },
       {
         "after": {
           "alt": "Lip Filler — after",
-          "src": "images/ba-ig-DT56qJviDuv-after.jpg"
+          "src": "images/a6e548be-ba-ig-dt56qjviduv-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Filler — before",
@@ -919,8 +911,7 @@
         },
         "cat": "lips",
         "sub": "Dermal filler",
-        "title": "Lip Enhancement ",
-        "visible": false
+        "title": "Lip Enhancement "
       },
       {
         "after": {
@@ -947,8 +938,7 @@
         },
         "cat": "cheeks",
         "sub": "Dermal filler",
-        "title": "Nasolabial Folds Dermal Filler",
-        "visible": false
+        "title": "Nasolabial Folds Dermal Filler"
       },
       {
         "after": {
@@ -961,8 +951,7 @@
         },
         "cat": "cheeks",
         "sub": "Dermal filler",
-        "title": "Nasolabial Fold Dermal Filler",
-        "visible": false
+        "title": "Nasolabial Fold Dermal Filler"
       },
       {
         "after": {
@@ -981,21 +970,20 @@
       {
         "after": {
           "alt": "Lip Definition — after",
-          "src": "images/ba-ig-DUMh9ARiKDU-after.jpg"
+          "src": "images/7365420f-ba-ig-dumh9arikdu-after-aligned.jpg"
         },
         "before": {
           "alt": "Lip Definition — before",
           "src": "images/ba-ig-DUMh9ARiKDU-before.jpg"
         },
-        "cat": "lips",
+        "cat": "chin",
         "sub": "Dermal filler",
-        "title": "Full Face Dermal Fillers",
-        "visible": false
+        "title": "Full Face Dermal Fillers"
       },
       {
         "after": {
           "alt": "Jawline Definition — after",
-          "src": "images/ba-ig-DUTWHr_CCji-after.jpg"
+          "src": "images/a544073f-ba-ig-dutwhr-ccji-after-aligned.jpg"
         },
         "before": {
           "alt": "Jawline Definition — before",
@@ -1003,8 +991,7 @@
         },
         "cat": "chin",
         "sub": "Dermal filler",
-        "title": "Jawline Definition",
-        "visible": false
+        "title": "Jawline Definition"
       }
     ],
     "tiles": [
