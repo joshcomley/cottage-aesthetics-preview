@@ -110,6 +110,7 @@
       <button data-cat="lips">Lips</button>
       <button data-cat="cheeks">Cheeks</button>
       <button data-cat="chin">Chin &amp; Jaw</button>
+      <button data-cat="eyes">Eyes &amp; Brows</button>
     </div>
 
     <div class="ba-section-label reveal">
@@ -215,6 +216,21 @@
 
   // ---- filtering ----
   var gf=document.getElementById('gfilter');
+
+  // Imported entries land hidden until the owner switches them on (they
+  // never reach this page's rendered HTML while hidden, per the builder's
+  // publish-mode item-visibility rule) -- a category button with nothing
+  // currently shown under it would otherwise present an empty filter to
+  // visitors, so hide it until she shows something in that category.
+  gf.querySelectorAll('button').forEach(function(b){
+    var c=b.getAttribute('data-cat');
+    if(c==='all') return;
+    var any=[].some.call(document.querySelectorAll('.ba-slider,.ba-tile'),function(el){
+      return el.getAttribute('data-cat')===c;
+    });
+    b.style.display=any?'':'none';
+  });
+
   gf.addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;
     gf.querySelectorAll('button').forEach(function(x){x.classList.remove('active');});

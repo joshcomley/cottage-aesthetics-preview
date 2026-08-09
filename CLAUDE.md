@@ -32,7 +32,13 @@ this file is orientation, not a substitute.
   `_global.json` for brand/nav/footer/hours/contact details).
 - "Add/reorder/remove a treatment card, review, FAQ entry, gallery item" → the
   matching collection array inside `content/<slug>.json` (spec/02 §6 lists the
-  fixed collection keys).
+  fixed collection keys). A gallery item (`gallery.sliders`/`gallery.tiles`)
+  MAY carry `"visible": false` — absent or `true` means shown; `false` hides
+  it from the public page while it stays visible (dimmed, with a "Hidden"
+  chip) in the owner's Before & After editor, until she switches it on
+  herself (wixy repo decisions/00117). **Never strip this key** when editing
+  an item for another reason — an accidental whole-array rewrite that drops
+  it silently re-publishes something she deliberately kept off the site.
 - "Change a color or font" → `theme/theme.json` only.
 - "Add a new page or section, or change layout/structure" → `pages/*.html` —
   more involved; needs new `data-wx-*` bindings wired to a matching content
