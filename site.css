@@ -122,6 +122,7 @@
   footer .script{font-size:1.5rem;color:#e6b98f}
 
   @media(max-width:860px){
+    header:has(~ .hero):not(.scrolled):not(.menu-open){background:none}
     .nav-links{display:none}
     .menu-toggle{display:block}
     .about .grid,.cottage .grid,.contact .grid{grid-template-columns:1fr;gap:2.4rem}
