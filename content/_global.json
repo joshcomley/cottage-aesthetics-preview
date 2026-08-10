@@ -10,37 +10,37 @@
   "footer": {
     "explore": [
       {
-        "href": "about.html",
+        "href": "/about",
         "label": "About"
       },
       {
-        "href": "treatments.html",
+        "href": "/treatments",
         "label": "Treatments"
       },
       {
-        "href": "gallery.html",
+        "href": "/gallery",
         "label": "Before &amp; After"
       },
       {
-        "href": "reviews.html",
+        "href": "/reviews",
         "label": "Reviews"
       }
     ],
     "visit": [
       {
-        "href": "contact.html",
+        "href": "/contact",
         "label": "Contact"
       },
       {
-        "href": "faq.html",
+        "href": "/faq",
         "label": "FAQ"
       },
       {
-        "href": "aftercare.html",
+        "href": "/aftercare",
         "label": "Aftercare"
       },
       {
-        "href": "policies.html",
+        "href": "/policies",
         "label": "Clinic Policies"
       }
     ]
