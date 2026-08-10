@@ -1,20 +1,8 @@
 {
-  "form": {
-    "consentText": "I consent to Cottage Aesthetics storing my details to respond to my enquiry, in line with the privacy policy. I understand my data won't be shared or used for marketing without my permission.",
-    "emailLabel": "Email",
-    "messageLabel": "How can I help?",
-    "messagePlaceholder": "Tell me a little about what you're interested in…",
-    "nameLabel": "Your name",
-    "phoneLabel": "Phone (optional)",
-    "thanksText": "Thank you — your message has been noted. For the quickest reply, please also call or email me directly using the details alongside."
-  },
-  "formIntro": {
-    "body": "The surest way to reach me is a quick call or email — my details are just alongside, and I'll always reply personally. We can't wait to hear from you.",
-    "title": "Send a message"
-  },
   "info": {
+    "intro": "The quickest way to reach me is a call or email — I'll always reply personally.",
     "parkingNote": "<strong>Easy, free parking</strong> right outside the clinic.",
-    "title": "Cottage Aesthetics"
+    "title": "Get in touch"
   },
   "meta": {
     "description": "Contact Cottage Aesthetics in Hartlebury — book a free consultation, opening hours, location and parking.",
@@ -29,7 +17,7 @@
   },
   "pageHero": {
     "eyebrow": "Contact",
-    "tag": "Every journey begins with a relaxed, no-obligation chat. Send a message, call, or book online — whichever suits you.",
+    "tag": "Every journey begins with a relaxed, no-obligation chat. Call, email, or book online — whichever suits you.",
     "title": "Come and see me"
   }
 }
