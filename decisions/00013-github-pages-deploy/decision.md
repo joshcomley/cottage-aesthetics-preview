@@ -46,10 +46,32 @@ explicitly never to push that ref by hand or manually dispatch the Pages workflo
 content." Getting this wrong would reintroduce exactly the consent-guardrail gap the original
 section existed to close.
 
+## What was decided — the `github-pages` environment's deployment branch policy
+
+This repo's `github-pages` environment (auto-provisioned when Pages was first enabled)
+already restricted deployments to a custom branch allowlist of `gh-pages` and `main` only —
+`gh api repos/joshcomley/cottage-aesthetics-preview/environments/github-pages` showed
+`deployment_branch_policy: {protected_branches: false, custom_branch_policies: true}`. Since
+the environment gate checks the RUN's triggering ref (`github.ref`), not what a `checkout`
+step inside the job happens to fetch, every real `wixy-live`-triggered run would have failed
+at the `deploy` job — a gap invisible to this PR's own CI, since `pages.yml` never triggers on
+`pull_request`. Fixed by adding `wixy-live` as a third allowed branch:
+`gh api -X POST repos/joshcomley/cottage-aesthetics-preview/environments/github-pages/
+deployment-branch-policies -f name=wixy-live -f type=branch`. This needed repo-admin-level
+credentials (the fleet's ordinary bot-PAT is deliberately admin-scope-less and returned 403;
+the operator's own token was used instead — same fallback the fleet already documents for
+`gh repo create`). `main` staying on the allowlist is deliberate, not an oversight: the
+bootstrap/recovery path (runbook.md, wixy repo) manually dispatches this workflow with
+`--ref main`, which needs `main` itself to remain an allowed deploy branch.
+
 ## What to watch for
 
 - If `ci.yml` is ever upgraded to newer action majors, consider bringing `pages.yml` back in
   sync at the same time (or vice versa) — nothing enforces the two staying aligned.
+- The environment branch policy above is a pure repo SETTING, not tracked by this diff or any
+  file in git — if the `github-pages` environment is ever deleted and recreated (e.g. Pages
+  disabled and re-enabled from scratch), `wixy-live` needs re-adding to its allowlist, and
+  nothing will fail loudly until an actual push to `wixy-live` is exercised for real.
 - A future contributor reading only this repo's `ci.yml` could reasonably assume "CI green on
   `main`" is the full release story; the `CLAUDE.md` update above is what corrects that
   assumption for a human, but nothing here machine-enforces it — the wixy engine's own
