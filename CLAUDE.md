@@ -60,10 +60,26 @@ separate elements or moving into the JSON value itself; `decisions/00003` and
 ## Never publish, never deploy — this repo cannot touch the live site
 
 Agents ship changes to this repo's `main` only: branch → PR → CI green →
-merge. **Merging to `main` does not affect `ca.cinnamons.uk`** — the site
-owner presses Publish inside the Wixy admin UI, which pins a specific commit
-SHA and only then updates the live site. Never attempt to trigger a publish,
-and never claim a change is "live" just because it merged here.
+merge. **Merging to `main` does not affect `ca.cinnamons.uk`, and it does
+not affect the public custom domain either** — the site owner presses
+Publish (or Restore) inside the Wixy admin UI, which pins a specific commit
+SHA and only then updates both live surfaces. Never attempt to trigger a
+publish, and never claim a change is "live" just because it merged here.
+
+The site also deploys to **GitHub Pages** on the owner's own domain
+(`.github/workflows/pages.yml`), gated by the `WIXY_PUBLIC_DOMAIN` repository
+variable. That workflow deliberately does **not** trigger on pushes to
+`main` — it triggers only on pushes to `refs/heads/wixy-live`, a branch the
+Wixy server (never an agent, never a human pushing by hand) force-pushes to
+at the end of every successful Publish or Restore. This keeps the exact same
+guarantee as `ca.cinnamons.uk`: merging content here is never itself a
+deploy, on either surface. **Never push to `wixy-live` by hand, and never
+run the Pages workflow's `workflow_dispatch` trigger to "ship" content** —
+if the public domain needs updating for a reason other than an owner
+Publish/Restore (for example, a one-off recovery), that is an operational
+decision, not something to do while doing ordinary content work here. See
+wixy repo decisions/00126 for the full design and this repo's own
+`decisions/00013`.
 
 ## Before shipping
 

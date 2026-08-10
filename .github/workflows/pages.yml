@@ -1,0 +1,100 @@
+name: Deploy to GitHub Pages
+
+# This workflow deploys the PUBLIC custom domain — it is intentionally NOT the same
+# thing as merging to `main`. It triggers on pushes to `wixy-live`, a branch ONLY the
+# wixy server ever moves (at the end of every successful Publish/Restore in the admin
+# UI) — never on pushes to `main`, which agents merge content to routinely without the
+# owner's involvement. Deploying `main` HEAD directly would ship un-published content
+# the moment any agent merged anything. See wixy repo decisions/00126 and this repo's
+# CLAUDE.md "Never publish, never deploy" section.
+on:
+  push:
+    branches: [wixy-live]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Pages deployments should queue, not cancel each other mid-flight (GitHub's own
+# recommended pattern) — unlike ci.yml's implicit per-ref concurrency, a slow deploy
+# must not be abandoned by the next one arriving.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # No-ops green (not a failure) until the operator sets this repository variable
+    # (Settings -> Secrets and variables -> Actions -> Variables) — safe by default on
+    # a fork, and safe before the operator has completed the go-live guide.
+    if: vars.WIXY_PUBLIC_DOMAIN != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Guard — domain variable sanity
+        run: |
+          case "${{ vars.WIXY_PUBLIC_DOMAIN }}" in
+            *:*|*/*|www.*)
+              echo "WIXY_PUBLIC_DOMAIN must be a bare apex hostname — no scheme, no path, no www. prefix (got: '${{ vars.WIXY_PUBLIC_DOMAIN }}')" >&2
+              exit 1
+              ;;
+          esac
+
+      - name: Checkout the live mirror
+        uses: actions/checkout@v7
+        with:
+          ref: wixy-live
+
+      # Verbatim pattern from this repo's own ci.yml (spec/independence/01 §3/C6) — see
+      # that file's comment for the full fork-visibility rationale; kept identical here
+      # so the two workflows' engine-checkout behavior never drifts apart.
+      - name: Checkout wixy engine
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ vars.WIXY_ENGINE_REPO || 'joshcomley/wixy' }}
+          ssh-key: ${{ vars.WIXY_ENGINE_REPO == '' && secrets.WIXY_DEPLOY_KEY || '' }}
+          path: wixy
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Install wixy builder (core deps only — no server extras needed here)
+        working-directory: wixy
+        run: pip install -e .
+
+      - name: validate (spec/02 §10)
+        run: python -m builder validate --root . --project wixy/projects/ca.json
+
+      - name: build — public domain, indexable (decisions/00126)
+        run: >
+          python -m builder build
+          --root . --project wixy/projects/ca.json
+          --domain "${{ vars.WIXY_PUBLIC_DOMAIN }}"
+          --indexable true
+          --out _site
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  not-configured:
+    if: vars.WIXY_PUBLIC_DOMAIN == ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Explain the no-op
+        run: |
+          echo "Deploy skipped — the WIXY_PUBLIC_DOMAIN repository variable isn't set yet." >> "$GITHUB_STEP_SUMMARY"
+          echo "Set it under Settings -> Secrets and variables -> Actions -> Variables." >> "$GITHUB_STEP_SUMMARY"
+          echo "See docs/go-live-github-pages.html in the wixy repo for the full walkthrough." >> "$GITHUB_STEP_SUMMARY"
