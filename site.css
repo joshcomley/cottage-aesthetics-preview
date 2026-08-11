@@ -40,7 +40,7 @@
     text-shadow:none;transition:color .3s,text-shadow .3s}
   header:not(.scrolled) .menu-toggle{color:#f3ead9;text-shadow:0 1px 9px rgba(18,12,8,.6)}
 
-  .hero{min-height:100vh;display:flex;align-items:center;position:relative;
+  .hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;position:relative;
     background-position:center;background-size:cover;background-repeat:no-repeat;color:#fbf4e8}
   .hero-band{width:100%;padding:2.3rem 0;background:rgba(18,12,9,.64)}
   .hero .wrap{padding-top:0}
