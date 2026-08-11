@@ -24,21 +24,24 @@
   header:has(~ .hero):not(.scrolled):not(.menu-open){background:rgba(18,12,9,.64)}
   .nav{display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;flex-direction:column;line-height:1}
-  .brand .b1{font-family:var(--font-serif);font-style:italic;font-size:1.5rem;color:var(--mocha)}
-  .brand .b2{font-size:.62rem;letter-spacing:.42em;text-transform:uppercase;color:var(--coffee-soft);margin-top:2px}
-  header:not(.scrolled) .brand .b1{color:#fbf4e8}
-  header:not(.scrolled) .brand .b2{color:#e7dcc6}
+  .brand .b1{font-family:var(--font-serif);font-style:italic;font-size:1.5rem;color:var(--mocha);
+    text-shadow:none;transition:color .3s,text-shadow .3s}
+  .brand .b2{font-size:.62rem;letter-spacing:.42em;text-transform:uppercase;color:var(--coffee-soft);margin-top:2px;
+    text-shadow:none;transition:color .3s,text-shadow .3s}
+  header:not(.scrolled) .brand .b1{color:#fbf4e8;text-shadow:0 1px 9px rgba(18,12,8,.6)}
+  header:not(.scrolled) .brand .b2{color:#e7dcc6;text-shadow:0 1px 9px rgba(18,12,8,.6)}
   .nav-links{display:flex;align-items:center;gap:2.1rem}
-  .nav-links a.lnk{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--coffee)}
-  header:not(.scrolled) .nav-links a.lnk{color:#f3ead9}
+  .nav-links a.lnk{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--coffee);
+    text-shadow:none;transition:color .3s,text-shadow .3s}
+  header:not(.scrolled) .nav-links a.lnk{color:#f3ead9;text-shadow:0 1px 9px rgba(18,12,8,.6)}
   .nav-links a.lnk:hover{color:var(--clay)}
   .nav .btn{padding:.6rem 1.3rem}
-  .menu-toggle{display:none;font-size:1.6rem;background:none;border:none;color:inherit;cursor:pointer}
-  header:not(.scrolled) .menu-toggle{color:#f3ead9}
+  .menu-toggle{display:none;font-size:1.6rem;background:none;border:none;color:inherit;cursor:pointer;
+    text-shadow:none;transition:color .3s,text-shadow .3s}
+  header:not(.scrolled) .menu-toggle{color:#f3ead9;text-shadow:0 1px 9px rgba(18,12,8,.6)}
 
   .hero{min-height:100vh;display:flex;align-items:center;position:relative;
     background-position:center;background-size:cover;background-repeat:no-repeat;color:#fbf4e8}
-  header:not(.scrolled) .brand,header:not(.scrolled) .nav-links a.lnk,header:not(.scrolled) .menu-toggle{text-shadow:0 1px 9px rgba(18,12,8,.6)}
   .hero-band{width:100%;padding:2.3rem 0;background:rgba(18,12,9,.64)}
   .hero .wrap{padding-top:0}
   .hero .eyebrow{color:#f3d9b8;text-shadow:0 1px 10px rgba(18,12,8,.55)}
