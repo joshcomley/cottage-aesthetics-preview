@@ -61,6 +61,7 @@
 
   .about{background:var(--cream-2)}
   .about .grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:4rem;align-items:center}
+  .about .grid>*{min-width:0}
   .about img{width:100%;border-radius:4px;box-shadow:var(--shadow)}
   .about h2{font-size:clamp(2rem,4vw,2.8rem);margin:.7rem 0 1.2rem}
   .about p{margin-bottom:1.1rem;color:var(--coffee-soft)}
@@ -71,7 +72,7 @@
   .values .head{text-align:center;margin-bottom:3rem}
   .values .eyebrow{color:#e6b98f}
   .vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
-  .vcard{border:1px solid rgba(233,201,169,.25);padding:2rem 1.5rem;border-radius:4px;text-align:center}
+  .vcard{border:1px solid rgba(233,201,169,.25);padding:2rem 1.5rem;border-radius:4px;text-align:center;min-width:0}
   .vcard .ic{line-height:0;margin-bottom:.5rem}
   .vcard .ic svg{width:34px;height:34px;stroke:#e6b98f;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
   .vcard h3{color:#fbf4e8;font-size:1.4rem;margin:.7rem 0 .5rem}
@@ -81,7 +82,7 @@
   .treat .head{text-align:center;margin-bottom:3rem}
   .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
   .tcard{background:#fbf5ea;border:1px solid var(--line);border-radius:6px;padding:2rem 1.8rem;
-    display:flex;flex-direction:column;transition:.25s}
+    display:flex;flex-direction:column;transition:.25s;min-width:0}
   .tcard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
   .tcard h3{font-size:1.55rem;margin-bottom:.3rem}
   .tcard .price{color:var(--clay);letter-spacing:.04em;margin-bottom:.9rem}
@@ -91,6 +92,7 @@
 
   .cottage{background:var(--oat)}
   .cottage .grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .cottage .grid>*{min-width:0}
   .gal{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:.8rem}
   .gal img{width:100%;height:100%;object-fit:cover;border-radius:4px}
   .gal img:first-child{grid-row:span 2}
@@ -113,6 +115,7 @@
   .contact{background:var(--mocha);color:#f2e7d6}
   .contact h2{color:#fff}
   .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+  .contact .grid>*{min-width:0}
   .contact .eyebrow{color:#e6b98f}
   .contact a{color:#f2e7d6;border-bottom:1px solid var(--brass)}
   .hours{list-style:none;margin-top:1rem}
