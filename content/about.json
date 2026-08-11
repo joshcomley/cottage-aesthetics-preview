@@ -13,14 +13,14 @@
   },
   "cottage": {
     "body1": "Cottage Aesthetics sits in the peaceful village of Hartlebury, tucked away from the busy high street. With a calming Mediterranean feel, every detail is here so you relax from the moment you arrive.",
-    "body2": "Complete privacy · easy free accessible parking · longer, unhurried appointments · a warm, welcoming atmosphere.",
+    "body2": "\nComplete privacy · easy free accessible parking · longer, unhurried appointments · a warm, welcoming atmosphere.",
     "eyebrow": "The Cottage",
     "img1": {
       "alt": "Treatment room",
       "src": "images/room.jpg"
     },
     "img2": {
-      "alt": "The lounge",
+      "alt": "Lounge",
       "src": "images/lounge.jpg"
     },
     "img3": {
