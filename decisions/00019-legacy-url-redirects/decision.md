@@ -96,3 +96,54 @@ the validation rules, HTML shape, and rationale.
   no query/fragment forwarding) — see the wixy engine's `builder/staticredirects.py` and its
   decisions/00136 before assuming a future entry with a nested path or forwarded query string
   will just work; it won't, by design.
+
+## Addendum — PR #43's CI is red on pre-existing `main` drift, not this change
+
+This PR's `validate-build-parity` job failed. **Confirmed unrelated to this change, before
+drawing that conclusion, not assumed:**
+
+- `validate` and `build` (the two steps this PR's own diff can affect) both **succeeded**.
+  Only the `rendered-parity check` step — a Playwright screenshot/text/image diff against the
+  wixy engine's own committed baseline (`wixy/builder/tests/parity/baseline`) — failed, with
+  exactly 5 failures: `index/text` body differs, `index/images` (missing
+  `images/hall.jpg`+`images/room.jpg`, extra two other images), `index/screenshot` desktop
+  1.70% / mobile 2.55% (budget 1%), `about/text` body differs.
+- `ci.yml`'s own `build` step does not pass `--static-redirects-file` (see "What to watch for"
+  above) — this CI job never exercises the new redirect map at all, in either direction.
+- `git fetch origin && git merge origin/main --no-edit` was run on this PR's branch: already
+  up to date, no divergence — this PR's base **is** `main`'s current tip, byte-for-byte.
+- `gh run list --branch main --workflow ci.yml` showed the last 5 runs directly on `main` —
+  each one a `wixy: publish vNN` commit from the Wixy admin's own publish flow, none of them a
+  PR — are **already all failing**, independent of this PR existing at all.
+- The failing run at this PR's exact base commit (`665f0d67`, `wixy: publish v65`) was pulled
+  directly and diffed against this PR's own failure output: **identical to the character** —
+  same 5 checks, same missing/extra image filenames and dimensions, same 1.70%/2.55% screenshot
+  deltas. Not "a similar-looking failure" — the same failure, already present before this PR's
+  diff was applied.
+
+**Root cause, matching this repo's own precedent exactly:** admin-editor publishes
+(`wixy: publish vNN`) commit straight to `main` via the Wixy server, bypassing the PR-based CI
+gate entirely (decisions/00016 first named this exact mechanism, for `v51`) — so nothing ever
+recaptures the wixy-engine-side parity baseline when Purdi publishes new content/photos through
+the admin. That gap was explicitly flagged back then as "a pipeline-design question bigger than
+[that PR's own change], and better decided deliberately than as a drive-by fix" — and, as this
+PR demonstrates, it still hasn't been addressed; the same failure mode has now recurred across
+six more publishes (`v60`–`v65`).
+
+**What decisions/00008 and decisions/00016 actually resolved to, both times this exact shape
+was hit before:** an agent with access to the wixy engine repo ran its `capture-baseline.yml`
+workflow to recapture the committed baseline against site-repo `main` *before* the affected PR
+merged, so that PR's own CI went green on its own merits. **Neither entry, nor anything else in
+this repo's `CLAUDE.md` or decision log, documents a "merge despite red CI" exception** — every
+prior occurrence of this failure shape was resolved by an actual baseline fix upstream, not by
+merging around it.
+
+**Consequence for this PR:** `capture-baseline.yml` exists only in the wixy engine repo, never
+in this one (confirmed empirically — no such path appears anywhere in this repo's git history)
+— recapturing it is out of this work package's reach and out of its scope either way (Work
+package 3 is the redirect map only). Per this repo's own precedent, **PR #43 is left open,
+unmerged, pending a separately-scoped parity-baseline repair** (wixy-engine-side, or an operator
+call) rather than merged on red CI. This PR's own three files (`redirects.json`,
+`.github/workflows/pages.yml`, this decision) are independently verified correct — see the main
+body of this entry above — and need no further change themselves; they're simply blocked from
+merging by an unrelated, already-broken `main`.
