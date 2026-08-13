@@ -108,7 +108,13 @@ wixy repo decisions/00126 for the full design and this repo's own
 ## Images
 
 - Canonical images live in `images/` (published at `/images/<name>`, per
-  spec/02 §9). Oversized images must be downscaled before commit — the wixy
-  repo's `tooling/downscale_photos.py` is the reference tool for this today;
-  once the media upload pipeline ships (a later milestone) the admin UI
-  handles downscaling automatically on upload.
+  spec/02 §9). Oversized images must be downscaled before commit. The wixy
+  repo's old `tooling/downscale_photos.py` no longer exists (removed
+  pre-publication, wixy decisions/00054 — it was hardcoded to a `photos/`
+  directory that moved, and business-specific besides); there is currently no
+  generic replacement tool. Use Pillow directly (`LANCZOS` resampling,
+  `ImageOps.exif_transpose` before resizing then strip EXIF on save, JPEG
+  quality 85 matching this repo's existing convention — see
+  decisions/00023 for a worked example) for one-off resizes. Once the media
+  upload pipeline ships (a later milestone) the admin UI handles downscaling
+  automatically on upload.
