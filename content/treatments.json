@@ -52,6 +52,7 @@
           "title": "Free Consultation"
         }
       ],
+      "detailUrl": "",
       "sub": "Every journey begins with a relaxed, no-obligation consultation.",
       "title": "Start Here"
     },
@@ -74,6 +75,7 @@
           "title": "Advanced Microneedling"
         }
       ],
+      "detailUrl": "/microneedling",
       "sub": "Stimulating your skin's natural collagen for healthier, brighter, smoother skin.",
       "title": "Microneedling"
     },
@@ -96,6 +98,7 @@
           "title": "Profhilo"
         }
       ],
+      "detailUrl": "/skin-boosters",
       "sub": "Deep hydration and a subtle \"5-point facelift\" glow — quality from within.",
       "title": "Skin Boosters"
     },
@@ -118,6 +121,7 @@
           "title": "Under-Eye Polynucleotides"
         }
       ],
+      "detailUrl": "/polynucleotides",
       "sub": "Encouraging the skin's natural repair — collagen, hydration and tissue regeneration.",
       "title": "Polynucleotides"
     },
@@ -164,6 +168,7 @@
           "title": "Facial Rebalancing &amp; Rejuvenation"
         }
       ],
+      "detailUrl": "/dermal-fillers",
       "sub": "Restoring volume and enhancing natural features while keeping perfect facial balance.",
       "title": "Dermal Fillers"
     }

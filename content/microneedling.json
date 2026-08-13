@@ -1,0 +1,81 @@
+{
+  "aftercare": {
+    "body": "You'll be given clear, personalised aftercare advice at your appointment. In general: avoid touching or applying pressure to the treated area for the first 24 hours, protect your skin with SPF, and avoid facials, exfoliation or active skincare until it's safe to reintroduce them.",
+    "eyebrow": "Looking after your skin",
+    "title": "Aftercare, made simple"
+  },
+  "consultation": {
+    "body": "Suitability for microneedling is discussed at your free, no-obligation consultation with Purdi, a Registered Nurse with the NMC, so any questions or concerns can be talked through honestly before you decide whether to go ahead.",
+    "eyebrow": "Safety &amp; suitability",
+    "title": "Assessed individually, every time"
+  },
+  "ctaStrip": {
+    "title": "Ready to start your microneedling journey?"
+  },
+  "draftFlag": "New treatment page — Purdi to review and approve the full wording (including the FAQ answers) before this goes live.",
+  "faqSection": {
+    "items": [
+      {
+        "answer": "Before completing all treatments I will discuss your goals and the best way to achieve them. Some treatments don't necessarily require a separately booked consultation, however there is always an option for a free, no-obligation consultation before we start your journey together. It's an opportunity to have a relaxed chat about your goals, so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
+        "question": "Do I need a consultation first?"
+      },
+      {
+        "answer": "Most clients find microneedling very comfortable. Numbing is used where appropriate, and time is taken to keep you at ease throughout. Any potential discomfort is discussed honestly at your consultation.",
+        "question": "Will microneedling hurt?"
+      },
+      {
+        "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised before and aftercare advice so you know exactly what to expect and how to look after your skin.",
+        "question": "Is there any downtime?"
+      },
+      {
+        "answer": "Standard Microneedling is available as a single session (£30) or, for the best value, a course of 5 sessions (£120). Advanced Microneedling — combined with premium medical-grade skincare — is £80 per session. Purdi will recommend what's right for your goals at your consultation.",
+        "question": "How many sessions will I need?"
+      }
+    ],
+    "title": "Microneedling — common questions"
+  },
+  "intro": {
+    "body1": "Microneedling is a collagen-boosting treatment that rejuvenates the skin for a smoother, firmer complexion. It's a good starting point if you'd like to improve fine lines, acne scarring, or your skin's overall texture and tone.",
+    "body2": "Every treatment begins with an honest consultation, so you understand what to realistically expect before deciding whether to go ahead — never a one-size-fits-all approach.",
+    "eyebrow": "About this treatment",
+    "title": "Stimulating your skin's own repair process"
+  },
+  "meta": {
+    "description": "Collagen-boosting microneedling at Cottage Aesthetics, Hartlebury — improving skin texture, fine lines and scarring, from a registered nurse. Free consultation.",
+    "inNav": false,
+    "navLabel": "Microneedling",
+    "navOrder": 0,
+    "ogImage": {
+      "alt": "Treatment room",
+      "src": "images/room.jpg"
+    },
+    "title": "Microneedling in Hartlebury — Cottage Aesthetics"
+  },
+  "options": {
+    "cards": [
+      {
+        "body": "Microneedling is a collagen-boosting treatment that rejuvenates the skin for a smoother, firmer complexion. Ideal for improving fine lines, scarring, and overall skin texture.",
+        "book": true,
+        "course": "£120 for a course of 5",
+        "meta": "45 minutes · incl. consultation",
+        "price": "£30 per session",
+        "title": "Standard Microneedling"
+      },
+      {
+        "body": "Collagen induction combined with premium medical-grade skincare (Derma 2.0 / Newest), tailored to ageing, pigmentation, acne scarring and rejuvenation.",
+        "book": true,
+        "course": "",
+        "meta": "45 minutes · incl. consultation",
+        "price": "£80",
+        "title": "Advanced Microneedling"
+      }
+    ],
+    "sub": "Stimulating your skin's natural collagen for healthier, brighter, smoother skin.",
+    "title": "Choose your microneedling treatment"
+  },
+  "pageHero": {
+    "eyebrow": "Microneedling",
+    "tag": "A collagen-boosting treatment for smoother, firmer, healthier-looking skin — from a registered nurse, in a calm countryside clinic.",
+    "title": "Microneedling in Hartlebury"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "aftercare": {
+    "body": "You'll be given clear, personalised aftercare advice at your appointment. In general: avoid touching or applying pressure to the treated area for the first 24 hours, protect your skin with SPF, and avoid facials, exfoliation or active skincare until it's safe to reintroduce them.",
+    "eyebrow": "Looking after your skin",
+    "title": "Aftercare, made simple"
+  },
+  "consultation": {
+    "body": "Suitability for skin boosters is discussed at your free, no-obligation consultation with Purdi, a Registered Nurse with the NMC, so any questions or concerns can be talked through honestly before you decide whether to go ahead.",
+    "eyebrow": "Safety &amp; suitability",
+    "title": "Assessed individually, every time"
+  },
+  "ctaStrip": {
+    "title": "Ready for healthier, more hydrated skin?"
+  },
+  "draftFlag": "New treatment page — Purdi to review and approve the full wording (including the FAQ answers) before this goes live.",
+  "faqSection": {
+    "items": [
+      {
+        "answer": "Before completing all treatments I will discuss your goals and the best way to achieve them. Some treatments don't necessarily require a separately booked consultation, however there is always an option for a free, no-obligation consultation before we start your journey together. It's an opportunity to have a relaxed chat about your goals, so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
+        "question": "Do I need a consultation first?"
+      },
+      {
+        "answer": "Most clients find skin boosters very comfortable. Numbing is used where appropriate, and time is taken to keep you at ease throughout. Any potential discomfort is discussed honestly at your consultation.",
+        "question": "Will skin boosters hurt?"
+      },
+      {
+        "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised before and aftercare advice so you know exactly what to expect and how to look after your skin.",
+        "question": "Is there any downtime?"
+      },
+      {
+        "answer": "Jalupro Super Hydro and Profhilo are each delivered as a single 45-minute session (£150 and £230 respectively). Purdi will discuss whether a repeat session best suits your goals at your consultation.",
+        "question": "How many sessions will I need?"
+      }
+    ],
+    "title": "Skin boosters — common questions"
+  },
+  "intro": {
+    "body1": "Skin boosters deeply hydrate the skin while improving elasticity, firmness and overall skin quality, with subtle lifting and rejuvenation — sometimes described as a \"5-point facelift\" glow.",
+    "body2": "Every treatment begins with an honest consultation, so results stay natural and realistic for you — never a one-size-fits-all approach.",
+    "eyebrow": "About this treatment",
+    "title": "Quality from within"
+  },
+  "meta": {
+    "description": "Jalupro and Profhilo skin boosters at Cottage Aesthetics, Hartlebury — deep hydration and a natural glow, from a registered nurse. Free consultation.",
+    "inNav": false,
+    "navLabel": "Skin Boosters",
+    "navOrder": 0,
+    "ogImage": {
+      "alt": "Treatment room",
+      "src": "images/room.jpg"
+    },
+    "title": "Skin Boosters in Hartlebury — Cottage Aesthetics"
+  },
+  "options": {
+    "cards": [
+      {
+        "body": "Deeply hydrates while improving elasticity, firmness and overall skin quality, with subtle lifting and rejuvenation.",
+        "book": true,
+        "course": "",
+        "meta": "45 minutes",
+        "price": "£150",
+        "title": "Jalupro Super Hydro"
+      },
+      {
+        "body": "A premium bio-remodelling treatment that intensely hydrates and firms for radiant, refreshed, natural-looking skin.",
+        "book": true,
+        "course": "",
+        "meta": "45 minutes",
+        "price": "£230",
+        "title": "Profhilo"
+      }
+    ],
+    "sub": "Deep hydration and a subtle \"5-point facelift\" glow — quality from within.",
+    "title": "Choose your skin booster"
+  },
+  "pageHero": {
+    "eyebrow": "Skin Boosters",
+    "tag": "Deep hydration and a subtle glow from within — nurse-led skin-quality treatments in a calm countryside clinic.",
+    "title": "Skin Boosters in Hartlebury"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "aftercare": {
+    "body": "You'll be given clear, personalised aftercare advice at your appointment. In general: avoid touching or applying pressure to the treated area for the first 24 hours, protect your skin with SPF, and avoid facials, exfoliation or active skincare until it's safe to reintroduce them.",
+    "eyebrow": "Looking after your skin",
+    "title": "Aftercare, made simple"
+  },
+  "consultation": {
+    "body": "Suitability for polynucleotides is discussed at your free, no-obligation consultation with Purdi, a Registered Nurse with the NMC, so any questions or concerns can be talked through honestly before you decide whether to go ahead.",
+    "eyebrow": "Safety &amp; suitability",
+    "title": "Assessed individually, every time"
+  },
+  "ctaStrip": {
+    "title": "Ready to support your skin's natural repair?"
+  },
+  "draftFlag": "New treatment page — Purdi to review and approve the full wording (including the FAQ answers) before this goes live.",
+  "faqSection": {
+    "items": [
+      {
+        "answer": "Before completing all treatments I will discuss your goals and the best way to achieve them. Some treatments don't necessarily require a separately booked consultation, however there is always an option for a free, no-obligation consultation before we start your journey together. It's an opportunity to have a relaxed chat about your goals, so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
+        "question": "Do I need a consultation first?"
+      },
+      {
+        "answer": "Most clients find polynucleotide treatment very comfortable. Numbing is used where appropriate, and time is taken to keep you at ease throughout. Any potential discomfort is discussed honestly at your consultation.",
+        "question": "Will polynucleotide treatment hurt?"
+      },
+      {
+        "answer": "Downtime is usually minimal and varies by treatment. You'll be given clear, personalised before and aftercare advice so you know exactly what to expect and how to look after your skin.",
+        "question": "Is there any downtime?"
+      },
+      {
+        "answer": "Polynucleotides and Under-Eye Polynucleotides are each £150 per 45-minute session, with a course of 3 recommended for best results. Purdi will confirm what's right for you at your consultation.",
+        "question": "How many sessions will I need?"
+      }
+    ],
+    "title": "Polynucleotides — common questions"
+  },
+  "intro": {
+    "body1": "Polynucleotides encourage the skin's natural repair processes — supporting collagen production, hydration and tissue regeneration. They can be used on the face, neck, hands and décolletage, or as a dedicated treatment for the delicate under-eye area.",
+    "body2": "Every treatment begins with an honest consultation, so you understand what to realistically expect before deciding whether to go ahead — never a one-size-fits-all approach.",
+    "eyebrow": "About this treatment",
+    "title": "Encouraging your skin's natural repair"
+  },
+  "meta": {
+    "description": "Polynucleotide treatments at Cottage Aesthetics, Hartlebury — encouraging your skin's natural repair, including a dedicated under-eye treatment. Free consultation.",
+    "inNav": false,
+    "navLabel": "Polynucleotides",
+    "navOrder": 0,
+    "ogImage": {
+      "alt": "Treatment room",
+      "src": "images/room.jpg"
+    },
+    "title": "Polynucleotides in Hartlebury — Cottage Aesthetics"
+  },
+  "options": {
+    "cards": [
+      {
+        "body": "For face, neck, hands and décolletage — improving skin quality, hydration and firmness. Product: Newest.",
+        "book": true,
+        "course": "Course of 3 recommended",
+        "meta": "45 minutes",
+        "price": "£150",
+        "title": "Polynucleotides"
+      },
+      {
+        "body": "Designed for the delicate eye area — improving hydration, strengthening the skin and reducing crepey texture, dark circles and puffiness. Product: Plinest.",
+        "book": true,
+        "course": "Course of 3 recommended",
+        "meta": "45 minutes",
+        "price": "£150",
+        "title": "Under-Eye Polynucleotides"
+      }
+    ],
+    "sub": "Encouraging the skin's natural repair — collagen, hydration and tissue regeneration.",
+    "title": "Choose your polynucleotide treatment"
+  },
+  "pageHero": {
+    "eyebrow": "Polynucleotides",
+    "tag": "Encouraging your skin's own repair — collagen, hydration and tissue regeneration, from a registered nurse.",
+    "title": "Polynucleotides in Hartlebury"
+  }
+}
