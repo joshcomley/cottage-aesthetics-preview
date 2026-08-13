@@ -1,0 +1,105 @@
+{
+  "aftercare": {
+    "body": "You'll be given clear, personalised aftercare advice at your appointment. In general: avoid touching or applying pressure to the treated area for the first 24 hours, protect your skin with SPF, and avoid facials, exfoliation or active skincare until it's safe to reintroduce them.",
+    "eyebrow": "Looking after your results",
+    "title": "Aftercare, made simple"
+  },
+  "consultation": {
+    "body": "Suitability for dermal fillers is discussed at your free, no-obligation consultation with Purdi, a Registered Nurse with the NMC, so any questions or concerns can be talked through honestly before you decide whether to go ahead.",
+    "eyebrow": "Safety &amp; suitability",
+    "title": "Assessed individually, every time"
+  },
+  "ctaStrip": {
+    "title": "Ready to talk through your goals?"
+  },
+  "draftFlag": "New treatment page — Purdi to review and approve the full wording (including the FAQ answers) before this goes live.",
+  "faqSection": {
+    "items": [
+      {
+        "answer": "Before completing all treatments I will discuss your goals and the best way to achieve them. Some treatments don't necessarily require a separately booked consultation, however there is always an option for a free, no-obligation consultation before we start your journey together. It's an opportunity to have a relaxed chat about your goals, so you feel completely confident in both your chosen treatment and your practitioner before any decisions are made.",
+        "question": "Do I need a consultation first?"
+      },
+      {
+        "answer": "Most clients find treatments very comfortable. Where appropriate, numbing is used, and time is taken to keep you at ease throughout. Any potential discomfort is discussed honestly at your consultation.",
+        "question": "Will dermal fillers hurt?"
+      },
+      {
+        "answer": "This varies by treatment. Some results are immediate, others develop over a few weeks as collagen builds or products integrate. Longevity depends on the treatment and the individual. This will be discussed with you so you have realistic expectations for your chosen treatment.",
+        "question": "When will I see results, and how long do they last?"
+      },
+      {
+        "answer": "Your consultation is the best place to discuss which area — lips, chin, cheeks or jawline — will make the most difference for you. If you'd like several areas assessed together, ask about Facial Rebalancing &amp; Rejuvenation: a detailed facial assessment allowing multiple areas to be treated together, restoring balance, proportion and natural harmony.",
+        "question": "How do I choose which area to treat?"
+      }
+    ],
+    "title": "Dermal fillers — common questions"
+  },
+  "intro": {
+    "body1": "Dermal fillers can restore volume, improve symmetry and enhance natural facial features — from the lips and chin to the cheeks and jawline. The goal is always balance and harmony.",
+    "body2": "Enhancing your appearance should never mean fitting into a mould where everyone leaves looking identical — the aim is simply to enhance what makes you uniquely you, never to change who you are.",
+    "eyebrow": "About this treatment",
+    "title": "Balance, not a changed appearance"
+  },
+  "meta": {
+    "description": "Lip, chin, cheek and jawline dermal filler treatments at Cottage Aesthetics, Hartlebury — restoring natural balance, from a registered nurse. Free consultation.",
+    "inNav": false,
+    "navLabel": "Dermal Fillers",
+    "navOrder": 0,
+    "ogImage": {
+      "alt": "Treatment room",
+      "src": "images/room.jpg"
+    },
+    "title": "Dermal Fillers in Hartlebury — Cottage Aesthetics"
+  },
+  "options": {
+    "cards": [
+      {
+        "body": "Restores hydration, improves symmetry and defines the lip border for beautifully balanced, natural lips.",
+        "book": true,
+        "course": "",
+        "meta": "1 hour",
+        "price": "£140",
+        "title": "Lip Enhancement"
+      },
+      {
+        "body": "Improves lower-facial balance and profile, adding projection and harmony between chin, lips and nose.",
+        "book": true,
+        "course": "",
+        "meta": "1 hour",
+        "price": "£140",
+        "title": "Chin Enhancement"
+      },
+      {
+        "body": "Restores youthful volume, enhances cheekbone definition and gives subtle lift to the mid-face.",
+        "book": true,
+        "course": "",
+        "meta": "1 hour",
+        "price": "£200",
+        "title": "Cheek Enhancement"
+      },
+      {
+        "body": "Sculpts and defines the jawline, enhancing facial proportions while keeping results natural.",
+        "book": true,
+        "course": "",
+        "meta": "1.5 hours",
+        "price": "£290",
+        "title": "Jawline Contouring"
+      },
+      {
+        "body": "A detailed facial assessment allowing multiple areas to be treated together, restoring balance, proportion and natural harmony.",
+        "book": false,
+        "course": "",
+        "meta": "By consultation",
+        "price": "Price after consultation",
+        "title": "Facial Rebalancing &amp; Rejuvenation"
+      }
+    ],
+    "sub": "Restoring volume and enhancing natural features while keeping perfect facial balance.",
+    "title": "Choose your dermal filler treatment"
+  },
+  "pageHero": {
+    "eyebrow": "Dermal Fillers",
+    "tag": "Restoring volume and enhancing natural features, while keeping perfect facial balance — nurse-led, in a calm countryside clinic.",
+    "title": "Dermal Fillers in Hartlebury"
+  }
+}

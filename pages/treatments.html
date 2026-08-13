@@ -21,6 +21,9 @@
   .cat{padding:4.2rem 0 .6rem}
   .cat > .wrap > h2{font-size:clamp(1.8rem,3.5vw,2.5rem);text-align:center;margin-bottom:.4rem}
   .cat .sub{text-align:center;color:var(--coffee-soft);max-width:58ch;margin:0 auto 2.4rem}
+  .sub-link{text-align:center;margin:-1.6rem auto 2.4rem}
+  .sub-link a{color:var(--olive-deep);font-size:.85rem;letter-spacing:.04em;border-bottom:1px solid var(--brass)}
+  .sub-link a:hover{color:var(--clay)}
   .course{font-size:.82rem;color:var(--coffee-soft);margin-top:-.6rem;margin-bottom:.9rem}
   .cat-sections{display:contents}
   .cat-sections .cat:nth-of-type(even){background:var(--cream-2)}
@@ -53,6 +56,7 @@
   <div class="wrap">
     <h2 data-wx=".title">Start Here</h2>
     <p class="sub" data-wx=".sub">Every journey begins with a relaxed, no-obligation consultation.</p>
+    <p class="sub-link" data-wx-if=".detailUrl"><a data-wx-attr="href:.detailUrl">Learn more &rarr;</a></p>
     <div class="tgrid" data-wx-list=".cards">
       <div class="tcard reveal" data-wx-list-item>
         <div class="meta" data-wx=".meta">30 minutes</div><h3 data-wx=".title">Free Consultation</h3><div class="price" data-wx=".price" data-wx-control="price">Complimentary</div>
