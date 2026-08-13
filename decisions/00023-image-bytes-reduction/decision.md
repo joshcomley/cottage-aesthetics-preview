@@ -103,6 +103,13 @@ stays valid; no template or content change was needed for this PR at all.
 - Flagged to the peer (wixy-engine-repo session) before any rebaseline, per their explicit
   instruction on this package. Expected resolution matches WP5's: a `capture-baseline.yml` run
   against this PR's branch, a wixy-repo action outside this repo's scope.
+- **Real CI (PR #47, run 31674399498) confirmed the same root cause but a wider blast radius
+  than the local prediction above**: `--strict-screenshots` (real CI only, not run locally —
+  see "Environment" precedent from WP5) promotes the screenshot diff from advisory to a hard
+  failure, so real CI shows **5** failures, not 2: `index/images`, `index/screenshot` desktop
+  (1.60%) and mobile (2.31%), `about/images`, `about/screenshot` desktop (2.34%) — all against
+  the same 1% budget, all the same underlying cause (baseline predates this PR's real pixel
+  changes). Not a new/different bug; a fuller manifestation of the one already diagnosed.
 - **`lounge.jpg` and the gallery before/after images remain unmeasured, not confirmed-optimal.**
   The brief explicitly allows documenting remaining named assets for a follow-up rather than
   blocking on measuring everything at once. `lounge.jpg`'s hero-background use needs a
