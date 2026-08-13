@@ -26,8 +26,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target.closest('.js-book')) { e.preventDefault(); openBook(); }
   });
 
-  var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  // .reveal elements are visible by default (site.css) -- only an element confirmed
+  // below the fold right now gets hidden-then-animated-in; everything already on
+  // screen at load (the homepage hero/H1 included) is simply never touched, so a
+  // disabled/erroring/absent observer can never leave real content invisible.
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      var alreadyVisible = r.top < window.innerHeight && r.bottom > 0;
+      if (!alreadyVisible) {
+        el.classList.add('reveal-pending');
+        io.observe(el);
+      }
+    });
+  }
 });
