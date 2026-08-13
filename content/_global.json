@@ -5,6 +5,18 @@
     "line1": "Cottage",
     "line2": "Aesthetics"
   },
+  "business": {
+    "address": {
+      "addressCountry": "GB",
+      "addressLocality": "Kidderminster",
+      "postalCode": "DY10 4JA",
+      "streetAddress": "8 Walton Road, Hartlebury"
+    },
+    "types": [
+      "HealthAndBeautyBusiness",
+      "MedicalBusiness"
+    ]
+  },
   "email": "cottageaestheticshartlebury@gmail.com",
   "emailHref": "mailto:cottageaestheticshartlebury@gmail.com",
   "footer": {
