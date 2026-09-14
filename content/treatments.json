@@ -61,9 +61,9 @@
         {
           "body": "Microneedling is a collagen-boosting treatment that rejuvenates the skin for a smoother, firmer complexion. Ideal for improving fine lines, scarring, and overall skin texture.",
           "book": true,
-          "course": "£120 for a course of 5",
+          "course": "£225 for a course of 5",
           "meta": "45 minutes · incl. consultation",
-          "price": "£30 per session",
+          "price": "£50 per session (add neck for £10)",
           "title": "Standard Microneedling"
         },
         {
@@ -71,7 +71,7 @@
           "book": true,
           "course": "",
           "meta": "45 minutes · incl. consultation",
-          "price": "£80",
+          "price": "£95  per session (add neck for £15)",
           "title": "Advanced Microneedling"
         }
       ],
