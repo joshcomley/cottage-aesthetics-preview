@@ -54,19 +54,19 @@
   "options": {
     "cards": [
       {
-        "body": "Microneedling is a collagen-boosting treatment that rejuvenates the skin for a smoother, firmer complexion. Ideal for improving fine lines, scarring, and overall skin texture.",
+        "body": "Essential Microneedling is a collagen-boosting treatment that rejuvenates the skin for a smoother, firmer complexion. Ideal for improving fine lines, scarring, and overall skin texture. Includes a double cleanse, exfoliation and skin preparation followed by professional microneedling using 3% hyaluronic acid and hydrating finish.",
         "book": true,
-        "course": "£120 for a course of 5",
+        "course": "£225 for a course of 5",
         "meta": "45 minutes · incl. consultation",
-        "price": "£30 per session",
-        "title": "Standard Microneedling"
+        "price": "£50 per session for face and jawline. (Neck - £10 extra) ",
+        "title": "Essential Microneedling"
       },
       {
-        "body": "Collagen induction combined with premium medical-grade skincare (Derma 2.0 / Newest), tailored to ageing, pigmentation, acne scarring and rejuvenation.",
+        "body": "Collagen induction combined with premium medical-grade skincare (Derma 2.0 / Newest), tailored to ageing, pigmentation, acne scarring and rejuvenation. Your full microneedling protocol incorporating the appropriate Derma 2.0 professional solution selected for specific skin concerns.",
         "book": true,
         "course": "",
         "meta": "45 minutes · incl. consultation",
-        "price": "£80",
+        "price": "£95 per session for face and jawline\n(Neck - £10 extra)",
         "title": "Advanced Microneedling"
       }
     ],
