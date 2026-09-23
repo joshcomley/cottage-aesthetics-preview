@@ -4,6 +4,8 @@
       {},
       {},
       {},
+      {},
+      {},
       {}
     ]
   },
@@ -174,6 +176,14 @@
           "meta": "By consultation",
           "price": "Price after consultation",
           "title": "Facial Rebalancing &amp; Rejuvenation"
+        },
+        {
+          "body": "Soften smile lines with carefully placed dermal filler. Restore a smoother, fresher appearance while keeping results beautifully natural.",
+          "book": true,
+          "course": "",
+          "meta": "&nbsp;1 Hour",
+          "price": "&nbsp;£160",
+          "title": "&nbsp;Nasolabial Fold Softening"
         }
       ],
       "detailUrl": "/dermal-fillers",
