@@ -1,4 +1,12 @@
 {
+  "": {
+    "cards": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
   "endCta": {
     "title": "Ready when you are"
   },
@@ -132,7 +140,7 @@
           "book": true,
           "course": "",
           "meta": "1 hour",
-          "price": "£140",
+          "price": "£160",
           "title": "Lip Enhancement"
         },
         {
@@ -140,7 +148,7 @@
           "book": true,
           "course": "",
           "meta": "1 hour",
-          "price": "£140",
+          "price": "£160",
           "title": "Chin Enhancement"
         },
         {
@@ -148,7 +156,7 @@
           "book": true,
           "course": "",
           "meta": "1 hour",
-          "price": "£200",
+          "price": "£240",
           "title": "Cheek Enhancement"
         },
         {
